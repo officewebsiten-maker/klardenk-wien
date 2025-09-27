@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>Klardenk Wien – Entrümpelung & Räumung</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Klardenk Räumdienst Wien – Entrümpelung schnell & fair</title>
+  <meta name="description" content="Entrümpelung & Räumung in Wien. Fixpreise nach Besichtigung, kurzfristige Termine, besenrein & versichert. Jetzt kostenlose Anfrage stellen."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>:root{--brand:#3c5380}</style>
 </head>
-<body>
-  <h1>Willkommen bei Klardenk Räumdienst</h1>
-  <p>Entrümpelung, Räumung & Wohnungsauflösung in Wien und Umgebung.</p>
-  <nav>
-    <ul>
-      <li><a href="danke.html">Danke</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutz.html">Datenschutz</a></li>
-    </ul>
-  </nav>
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-[var(--brand)] text-white">
+    <div class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
+      <h1 class="font-extrabold text-lg">Klardenk Räumdienst – Wien</h1>
+      <nav class="hidden sm:flex gap-5 text-sm">
+        <a href="/impressum.html" class="underline">Impressum</a>
+        <a href="/datenschutz.html" class="underline">Datenschutz</a>
+      </nav>
+    </div>
+  </header>
+  <section class="relative">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative mx-auto max-w-5xl px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-start">
+      <div class="text-white">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Entrümpelung in ganz Wien.</h2>
+        <p class="mt-3 text-slate-100/90">Fixpreis nach Besichtigung, kurzfristige Termine, besenrein & versichert. 23 Bezirke – wir kommen.</p>
+        <ul class="mt-4 space-y-1 text-slate-100/90 text-sm">
+          <li>✅ Besenrein-Garantie</li>
+          <li>✅ Wertanrechnung möglich</li>
+          <li>✅ Termin in 24–48h</li>
+        </ul>
+      </div>
+      <form name="Schnellanfrage" method="POST" action="/danke.html"
+            data-netlify="true" netlify-honeypot="bot-field"
+            class="bg-white rounded-2xl shadow p-6">
+        <input type="hidden" name="form-name" value="Schnellanfrage">
+        <p class="hidden"><label>Bot <input name="bot-field"></label></p>
+        <h3 class="text-xl font-bold">Kostenlose Besichtigung anfragen</h3>
+        <p class="text-sm text-slate-500">Wir melden uns werktags innerhalb von 2 Stunden.</p>
+        <div class="mt-4 grid gap-3">
+          <input class="border rounded-lg px-4 py-3" name="name" placeholder="Ihr Name" required>
+          <input class="border rounded-lg px-4 py-3" type="tel" name="telefon" placeholder="Telefon" required>
+          <input class="border rounded-lg px-4 py-3" type="email" name="email" placeholder="E‑Mail (optional)">
+          <input class="border rounded-lg px-4 py-3" name="bezirk" placeholder="Bezirk (z. B. 1050)">
+          <select class="border rounded-lg px-4 py-3" name="art">
+            <option>Art der Räumung auswählen</option>
+            <option>Wohnung / Haus</option><option>Keller / Dachboden</option>
+            <option>Gewerbe</option><option>Nachlass / Verlassenschaft</option>
+          </select>
+          <textarea class="border rounded-lg px-4 py-3" name="beschreibung" rows="3"
+                    placeholder="Kurz beschreiben (m², Stockwerk, Lift, Fotos)"></textarea>
+          <button class="bg-[var(--brand)] text-white font-semibold rounded-lg px-5 py-3">Anfrage senden</button>
+          <p class="text-xs text-slate-500">Mit Klick stimmen Sie der Verarbeitung gemäß <a class="underline" href="/datenschutz.html">Datenschutz</a> zu.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="mx-auto max-w-5xl px-4 py-8 text-sm flex flex-wrap gap-4 justify-between">
+      <div>© <span id="y"></span> Klardenk Räumdienst, Wien</div>
+      <div class="space-x-4">
+        <a href="/impressum.html" class="underline">Impressum</a>
+        <a href="/datenschutz.html" class="underline">Datenschutz</a>
+        <a href="/danke.html" class="underline">Danke</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
+
