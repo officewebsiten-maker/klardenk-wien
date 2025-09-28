@@ -33,18 +33,58 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <header class="bg-white">
+  <!-- Header (neu) -->
+  <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="font-extrabold text-lg">Klardenk Räumdienst</div>
+      <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
+
+      <!-- Desktop-Menü -->
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#leistungen" class="hover:underline">Leistungen</a>
+        <div class="relative group">
+          <button class="inline-flex items-center gap-2 hover:underline">
+            Leistungen
+            <svg width="14" height="14" viewBox="0 0 20 20" class="opacity-70"><path d="M5 7l5 5 5-5" fill="currentColor"/></svg>
+          </button>
+          <!-- Dropdown -->
+          <div class="absolute left-0 mt-2 w-[340px] bg-white border rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
+            <ul class="p-2 text-sm">
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/wohnung-haus.html"><b>Wohnung & Haus</b><br><span class="text-slate-500">Komplette Räumung inkl. Abbau, Sortierung, Transport & Entsorgung.</span></a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/keller-dachboden-garage.html"><b>Keller, Dachboden, Garage</b><br><span class="text-slate-500">Schnell & unkompliziert – wir tragen, Sie lehnen sich zurück.</span></a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/buero-gewerbe.html"><b>Büro & Gewerbe</b><br><span class="text-slate-500">Räumung außerhalb Ihrer Geschäftszeiten, inkl. Aktenvernichtung.</span></a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/nachlass-verlassenschaft.html"><b>Nachlass & Verlassenschaft</b><br><span class="text-slate-500">Einfühlsame Abwicklung mit Wertanrechnung.</span></a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/sperrmuell-entsorgung.html"><b>Sperrmüll & Entsorgung</b><br><span class="text-slate-500">Fachgerechte Trennung, Recycling & Dokumentation.</span></a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/reinigung-kleinreparaturen.html"><b>Reinigung & Kleinreparaturen</b><br><span class="text-slate-500">Endreinigung, Malerarbeiten, Dübel schließen.</span></a></li>
+            </ul>
+          </div>
+        </div>
         <a href="#ablauf" class="hover:underline">Ablauf</a>
         <a href="#preise" class="hover:underline">Preise</a>
         <a href="#bewertungen" class="hover:underline">Bewertungen</a>
         <a href="#kontakt" class="hover:underline">Kontakt</a>
-        <a href="/impressum.html" class="hover:underline">Impressum</a>
-        <a href="/datenschutz.html" class="hover:underline">Datenschutz</a>
+      </nav>
+
+      <!-- Mobile Menü Button -->
+      <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
+    </div>
+
+    <!-- Mobile Menü -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <nav class="px-4 py-3 text-sm space-y-2">
+        <details>
+          <summary class="py-2 font-semibold">Leistungen</summary>
+          <ul class="pl-3 space-y-1">
+            <li><a class="block py-1 underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
+            <li><a class="block py-1 underline" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
+            <li><a class="block py-1 underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
+            <li><a class="block py-1 underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li>
+            <li><a class="block py-1 underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
+            <li><a class="block py-1 underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
+          </ul>
+        </details>
+        <a class="block py-1 underline" href="#ablauf">Ablauf</a>
+        <a class="block py-1 underline" href="#preise">Preise</a>
+        <a class="block py-1 underline" href="#bewertungen">Bewertungen</a>
+        <a class="block py-1 underline" href="#kontakt">Kontakt</a>
       </nav>
     </div>
   </header>
@@ -245,7 +285,7 @@
         </div>
       </div>
 
-      <!-- Zweites Formular (anderer Name) -->
+      <!-- Zweites Formular -->
       <form name="Besichtigung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white rounded-2xl p-6 shadow-soft border w-full">
         <input type="hidden" name="form-name" value="Besichtigung" />
         <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
@@ -298,6 +338,11 @@
     <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.</div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
