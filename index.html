@@ -15,7 +15,7 @@
     :root { --brand:#3c5380; }
     .brand { color: var(--brand); }
     .brand-bg { background: var(--brand); }
-    .shadow-soft{ box-shadow: 0 10px 25px rgba(0,0,0,.08);} 
+    .shadow-soft{ box-shadow: 0 10px 25px rgba(0,0,0,.08);}
     .container{ max-width: 1120px; }
     html{ scroll-behavior:smooth; }
   </style>
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <!-- Header (bereinigt) -->
+  <!-- Header -->
   <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -45,7 +45,7 @@
             Leistungen
             <svg width="14" height="14" viewBox="0 0 20 20" class="opacity-70"><path d="M5 7l5 5 5-5" fill="currentColor"/></svg>
           </button>
-          <!-- Dropdown NUR Links -->
+          <!-- Dropdown: nur Links -->
           <div class="absolute left-0 mt-2 w-[320px] bg-white border rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
             <ul class="p-2 text-sm">
               <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
@@ -95,17 +95,13 @@
       <div class="container mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-start">
         <div class="text-white">
           <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Entrümpelung, Räumung &<br/> Wohnungsauflösung in Wien</h1>
-          <p class="mt-4 text-lg md:text-xl max-w-xl">
-            Fixpreis nach Besichtigung, besenrein & versichert. 23 Bezirke – wir kommen kurzfristig.
-          </p>
+          <p class="mt-4 text-lg md:text-xl max-w-xl">Fixpreis nach Besichtigung, besenrein & versichert. 23 Bezirke – wir kommen kurzfristig.</p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Jetzt kostenlos anfragen</a>
             <a href="https://wa.me/436601234567" class="border border-white/40 text-white px-5 py-3 rounded-xl">WhatsApp schreiben</a>
           </div>
           <div class="mt-6 flex flex-wrap gap-4 text-sm opacity-95">
-            <span>✅ Besenrein‑Garantie</span>
-            <span>✅ Wertanrechnung möglich</span>
-            <span>✅ Termin in 24–48h</span>
+            <span>✅ Besenrein‑Garantie</span><span>✅ Wertanrechnung möglich</span><span>✅ Termin in 24–48h</span>
           </div>
         </div>
 
@@ -122,10 +118,8 @@
             <input class="border rounded-lg px-4 py-3" name="bezirk" placeholder="Bezirk (z. B. 1050)" />
             <select class="border rounded-lg px-4 py-3" name="art">
               <option>Art der Räumung auswählen</option>
-              <option>Wohnung / Haus</option>
-              <option>Keller / Dachboden</option>
-              <option>Büro / Gewerbe</option>
-              <option>Nachlass / Verlassenschaft</option>
+              <option>Wohnung / Haus</option><option>Keller / Dachboden</option>
+              <option>Büro / Gewerbe</option><option>Nachlass / Verlassenschaft</option>
               <option>Garage / Lager</option>
             </select>
             <textarea class="border rounded-lg px-4 py-3" name="beschreibung" rows="3" placeholder="Kurz beschreiben (m², Stockwerk, Lift, Fotos)"></textarea>
@@ -145,7 +139,7 @@
     <div class="text-center border rounded-xl p-4">🛡️ <div class="text-sm text-slate-600">Betriebshaftpflicht</div></div>
   </section>
 
-  <!-- Leistungen (Kacheln verlinkt) -->
+  <!-- Leistungen (Kacheln sind klickbar) -->
   <section id="leistungen" class="bg-slate-50 py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-extrabold text-center">Unsere Leistungen</h2>
@@ -203,9 +197,7 @@
           <div class="text-4xl font-extrabold">€ 199</div>
           <div class="font-bold mt-2">Keller / Abteil</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>1–2 m³</li>
-            <li>inkl. Anfahrt & Entsorgung</li>
-            <li>fertig in 1–2 Std.</li>
+            <li>1–2 m³</li><li>inkl. Anfahrt & Entsorgung</li><li>fertig in 1–2 Std.</li>
           </ul>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-soft border-2 border-[var(--brand)]">
@@ -213,9 +205,7 @@
           <div class="text-4xl font-extrabold">€ 690</div>
           <div class="font-bold mt-2">2‑Zimmer‑Wohnung</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>ca. 50–60 m²</li>
-            <li>2–3 Mitarbeiter</li>
-            <li>Besenrein inklusive</li>
+            <li>ca. 50–60 m²</li><li>2–3 Mitarbeiter</li><li>Besenrein inklusive</li>
           </ul>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-soft">
@@ -223,9 +213,7 @@
           <div class="text-4xl font-extrabold">€ 1.490</div>
           <div class="font-bold mt-2">Haus / Verlassenschaft</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>Fixpreis nach Besichtigung</li>
-            <li>Wertanrechnung möglich</li>
-            <li>inkl. Entsorgungsbelege</li>
+            <li>Fixpreis nach Besichtigung</li><li>Wertanrechnung möglich</li><li>inkl. Entsorgungsbelege</li>
           </ul>
         </div>
       </div>
@@ -285,7 +273,6 @@
         </div>
       </div>
 
-      <!-- Zweites Formular -->
       <form name="Besichtigung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white rounded-2xl p-6 shadow-soft border w-full">
         <input type="hidden" name="form-name" value="Besichtigung" />
         <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
@@ -312,11 +299,8 @@
       <div>
         <div class="font-bold">Leistungen</div>
         <ul class="mt-3 space-y-2 text-slate-400">
-          <li>Wohnungsauflösung</li>
-          <li>Hausräumung</li>
-          <li>Keller/Dachboden</li>
-          <li>Büro & Gewerbe</li>
-          <li>Nachlass/Verlassenschaft</li>
+          <li>Wohnungsauflösung</li><li>Hausräumung</li><li>Keller/Dachboden</li>
+          <li>Büro & Gewerbe</li><li>Nachlass/Verlassenschaft</li>
         </ul>
       </div>
       <div>
@@ -335,7 +319,9 @@
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.</div>
+    <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">
+      © <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.
+    </div>
   </footer>
 
   <script>
