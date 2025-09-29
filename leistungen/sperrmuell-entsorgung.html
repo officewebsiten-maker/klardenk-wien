@@ -1,20 +1,23 @@
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Sperrmüll & Entsorgung | Klardenk Wien</title>
-  <meta name="description" content="Sperrmüll-Abholung & fachgerechte Entsorgung in Wien – recyclinggerecht mit Belegen."/>
+  <meta name="description" content="Sperrmüll-Abholung & fachgerechte Entsorgung in Wien – Trennung, Recycling & Entsorgungsbelege. Kurzfristige Termine, fairer Fixpreis nach Besichtigung."/>
   <link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--brand:#3c5380}
     .brand-bg{background:var(--brand)}
+    .brand{color:var(--brand)}
     .container{max-width:1120px}
     html{scroll-behavior:smooth}
+    .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+    .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
   </style>
 </head>
 <body class="antialiased text-slate-800">
 
   <!-- HEADER (Unterseiten-Version) -->
-  <!-- siehe Abschnitt B -->
   <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -38,33 +41,198 @@
     </div>
   </header>
 
+  <!-- HERO -->
+  <section class="brand-bg text-white">
+    <div class="container mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-white/80 text-xs">Abholung · Trennung · Recycling</p>
+        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Sperrmüll & Entsorgung – <span class="opacity-90">schnell, sauber, belegbar</span></h1>
+        <p class="mt-4 text-lg text-white/90">Wir holen ab, trennen fachgerecht und entsorgen recycling‑gerecht – auf Wunsch mit Entsorgungsbelegen und kurzer Fotodoku.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Abholung anfragen</a>
+          <a href="https://wa.me/436601234567" class="border border-white/40 text-white px-5 py-3 rounded-xl">WhatsApp</a>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
+          <span>✅ Kurzfristige Termine (24–72h)</span>
+          <span>✅ Recycling‑gerechte Wege</span>
+          <span>✅ Versichert & belegbar</span>
+        </div>
+      </div>
+      <div class="card p-6 md:p-8 text-slate-700 shadow-soft bg-white">
+        <h3 class="text-xl font-bold">Typische Abholungen</h3>
+        <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
+          <li>Möbel (Schränke, Sofas, Betten)</li>
+          <li>Elektro & E‑Schrott (nach Vorgabe)</li>
+          <li>Metall, Holz, Mischmüll</li>
+          <li>Keller‑/Garagenräumungen</li>
+        </ul>
+        <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Schonend im Haus</div>
+            <div class="text-slate-500 mt-1">Treppen‑ & Wandschutz</div>
+          </div>
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Belege & Doku</div>
+            <div class="text-slate-500 mt-1">auf Wunsch inkl.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="text-center card p-4"><div class="text-2xl">♻️</div><div class="text-sm text-slate-600 mt-1">Recycling‑gerecht</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">🧾</div><div class="text-sm text-slate-600 mt-1">Entsorgungsbelege</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">⏱️</div><div class="text-sm text-slate-600 mt-1">Kurzfristig</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">🛡️</div><div class="text-sm text-slate-600 mt-1">Versichert</div></div>
+  </section>
+
+  <!-- LEISTUNGEN -->
   <section class="bg-slate-50">
-    <div class="container mx-auto px-4 py-12">
-      <h1 class="text-3xl md:text-4xl font-extrabold">Sperrmüll & Entsorgung</h1>
-      <p class="mt-3 text-slate-600 max-w-3xl">Abholung, Trennung, Recycling – inklusive Entsorgungsbelege. Auch kurzfristig möglich.</p>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Was wir übernehmen</h2>
+      <p class="mt-3 text-slate-600 max-w-3xl">Vom schweren Schrank bis zu E‑Schrott – wir tragen, trennen und entsorgen verantwortungsvoll. Transparent & fair.</p>
 
       <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Wir übernehmen</h3>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Abholung & Tragen</h3>
           <ul class="mt-2 list-disc pl-5 text-slate-600">
-            <li>Möbel & Elektro</li><li>Metall, Holz, Mischmüll</li><li>Sonderposten nach Absprache</li>
+            <li>Sperrige Möbel & Geräte</li>
+            <li>Treppen‑/Wandschutz</li>
+            <li>Transport & Etagenlogistik</li>
           </ul>
         </div>
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Vorteile</h3>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Trennung & Recycling</h3>
           <ul class="mt-2 list-disc pl-5 text-slate-600">
-            <li>Transparente Wege</li><li>Belege inklusive</li><li>Versichert</li>
+            <li>Holz, Metall, E‑Schrott, Papier</li>
+            <li>Recycling‑gerechte Abgabe</li>
+            <li>Entsorgung nach Vorgaben</li>
           </ul>
         </div>
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Hinweis</h3>
-          <p class="mt-2 text-slate-600">Bitte keine Gefahrstoffe ohne vorherige Rücksprache.</p>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Nachweise & Extras</h3>
+          <ul class="mt-2 list-disc pl-5 text-slate-600">
+            <li>Entsorgungsbelege</li>
+            <li>Kurze Fotodoku auf Wunsch</li>
+            <li>Besenrein‑Abschluss</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Sonderposten</h3>
+          <p class="mt-2 text-slate-600">Reifen, Fahrräder, Latten, Rohre, Matratzen, Klein‑Schutt. Bitte kurz melden, was anfällt – wir geben grünes Licht.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Nicht möglich</h3>
+          <p class="mt-2 text-slate-600">Gefahrstoffe (z. B. Chemikalien, Asbest), große Bauschuttmengen, Öl/Altbatterien ohne gesonderte Vereinbarung.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Preisfaktoren</h3>
+          <p class="mt-2 text-slate-600">Volumen (m³), Tragestrecken, Etagen/Lift, E‑Schrott/Metallanteil, Sonderposten. Fixpreis folgt nach Besichtigung.</p>
         </div>
       </div>
 
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Abholung anfragen</a>
-        <a href="https://wa.me/436601234567" class="px-5 py-3 rounded-lg border">WhatsApp</a>
+        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Kostenlose Besichtigung</a>
+        <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF (TIMELINE) -->
+  <section>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">So läuft’s ab</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 1</div>
+          <div class="font-bold mt-1">Kurzbriefing</div>
+          <p class="mt-2 text-slate-600">Per Telefon/WhatsApp. Fotos helfen bei der Einschätzung (Volumen, Etagen, Lift, Hof/Stellplatz).</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 2</div>
+          <div class="font-bold mt-1">Besichtigung & Fixpreis</div>
+          <p class="mt-2 text-slate-600">Vor Ort – transparent, ohne versteckte Kosten. Express‑Slot möglich.</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 3</div>
+          <div class="font-bold mt-1">Abholung & Trennung</div>
+          <p class="mt-2 text-slate-600">Sicheres Tragen, sorgfältige Trennung, Recycling‑gerechte Entsorgung.</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 4</div>
+          <div class="font-bold mt-1">Besenrein & Belege</div>
+          <p class="mt-2 text-slate-600">Abnahme mit dir. Entsorgungsbelege & kurze Fotodoku auf Wunsch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE (Richtwerte) -->
+  <section class="bg-slate-50">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Richtpreise</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">Preise hängen von Volumen, Tragestrecken und Posten ab. Diese Werte geben Orientierung – der Fixpreis folgt nach Besichtigung.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">ab</div>
+          <div class="text-4xl font-extrabold">€ 99</div>
+          <div class="font-bold mt-2">Kleinteile</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>einzelnes Möbelstück</li><li>kurze Wege</li><li>schnelle Abholung</li>
+          </ul>
+        </div>
+        <div class="card p-6 border-2 border-[var(--brand)]">
+          <div class="text-sm text-slate-500">ab</div>
+          <div class="text-4xl font-extrabold">€ 199</div>
+          <div class="font-bold mt-2">Kleiner Sperrmüll</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>1–2 m³</li><li>Trennung & Recycling</li><li>Entsorgung inkl.</li>
+          </ul>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">auf Anfrage</div>
+          <div class="text-4xl font-extrabold">Großmenge</div>
+          <div class="font-bold mt-2">Projekt</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>größere Volumina</li><li>Sonderposten</li><li>Belege & Fotodoku</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6"><a href="/#kontakt" class="underline font-semibold">Fixpreis nach Besichtigung anfordern →</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Häufige Fragen</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="card p-5 open">
+          <summary class="font-semibold cursor-pointer">Holt ihr auch einzelne Möbel ab?</summary>
+          <p class="mt-2 text-slate-600">Ja, von einzelnen Stücken bis hin zu kompletten Posten.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Wie läuft es mit E‑Schrott?</summary>
+          <p class="mt-2 text-slate-600">Wir trennen fachgerecht und führen an geeignete Sammelstellen ab – Belege auf Wunsch.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Nehmt ihr Farben/Lacke mit?</summary>
+          <p class="mt-2 text-slate-600">Kleinmengen nur nach Rücksprache. Gefahrstoffe benötigen gesonderte Wege.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Wie schnell könnt ihr kommen?</summary>
+          <p class="mt-2 text-slate-600">Oft innerhalb von 24–72 Stunden. Am besten kurz anrufen oder via WhatsApp schreiben.</p>
+        </details>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Beratung & Termin</a>
+        <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
       </div>
     </div>
   </section>
@@ -102,4 +270,5 @@
       document.getElementById('mobileMenu')?.classList.toggle('hidden');
     });
   </script>
-</body></html>
+</body>
+</html>
