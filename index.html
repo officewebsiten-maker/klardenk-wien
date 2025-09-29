@@ -81,10 +81,8 @@
           </div>
         </div>
 
-        <!-- Netlify Form -->
-        <form name="Schnellanfrage" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white/95 rounded-2xl p-6 shadow-soft">
-          <input type="hidden" name="form-name" value="Schnellanfrage" />
-          <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
+        <!-- Netlify Form (Kurzform ersetzt) -->
+        <form name="contact" netlify class="bg-white/95 rounded-2xl p-6 shadow-soft" action="/danke.html" method="POST">
           <h3 class="text-xl font-bold">Kostenlose Besichtigung anfragen</h3>
           <p class="text-sm text-slate-600">Wir melden uns werktags innerhalb von 2 Stunden.</p>
           <div class="mt-4 grid grid-cols-1 gap-3">
@@ -249,9 +247,7 @@
         </div>
       </div>
 
-      <form name="Besichtigung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white rounded-2xl p-6 shadow-soft border w-full">
-        <input type="hidden" name="form-name" value="Besichtigung" />
-        <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
+      <form name="contact" netlify class="bg-white rounded-2xl p-6 shadow-soft border w-full" action="/danke.html" method="POST">
         <h3 class="text-xl font-bold">Schnellanfrage</h3>
         <div class="mt-4 grid grid-cols-1 gap-3">
           <input class="border rounded-lg px-4 py-3" name="name" placeholder="Ihr Name" required />
@@ -262,8 +258,6 @@
           <p class="text-xs text-slate-500">Datenschutz‑Hinweis: Wir verwenden Ihre Daten ausschließlich zur Bearbeitung Ihrer Anfrage. Siehe <a href="/datenschutz.html" class="underline">Datenschutz</a>.</p>
         </div>
       </form>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="bg-slate-900 text-slate-200">
@@ -308,3 +302,4 @@
   </script>
 </body>
 </html>
+
