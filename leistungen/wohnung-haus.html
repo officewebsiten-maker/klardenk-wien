@@ -1,10 +1,25 @@
-<!DOCTYPE html><html lang="de"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Wohnung & Haus | Klardenk Räumdienst Wien</title>
-<meta name="description" content="Wohnungs- & Hausräumung in Wien: Abbau, Sortierung, Transport, Entsorgung. Fixpreis nach Besichtigung."/>
-<link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
-<style>:root{--brand:#3c5380}.brand-bg{background:var(--brand)}</style>
-</head><body class="antialiased text-slate-800">
+<meta name="description" content="Wohnungs- & Hausräumung in Wien – Abbau, Sortierung, Transport und recyclinggerechte Entsorgung. Fixpreis nach Besichtigung, besenrein & versichert."/>
+<link rel="icon" href="/favicon.ico"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{--brand:#3c5380}
+  .brand-bg{background:var(--brand)}
+  .brand{color:var(--brand)}
+  .container{max-width:1120px}
+  html{scroll-behavior:smooth}
+  .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+  .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
+</style>
+</head>
+<body class="antialiased text-slate-800">
+
+<!-- HEADER -->
 <header class="bg-white sticky top-0 z-40 border-b">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -29,10 +44,10 @@
       <a href="/#bewertungen" class="hover:underline">Bewertungen</a>
       <a href="/#kontakt" class="hover:underline">Kontakt</a>
     </nav>
-    <button id="menuBtn" class="md:hidden p-2 border rounded-lg">☰</button>
+    <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
   </div>
   <div id="mobileMenu" class="md:hidden hidden border-t px-4 py-3 text-sm space-y-2">
-    <details><summary class="py-2 font-semibold">Leistungen</summary>
+    <details open><summary class="py-2 font-semibold">Leistungen</summary>
       <ul class="pl-3 space-y-1">
         <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
         <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
@@ -49,26 +64,243 @@
   </div>
 </header>
 
-<section class="bg-slate-50">
-  <div class="container mx-auto px-4 py-12">
-    <h1 class="text-3xl md:text-4xl font-extrabold">Wohnung & Haus räumen</h1>
-    <p class="mt-3 text-slate-600 max-w-3xl">Kompletträumung inkl. Abbau, Sortierung, Transport und fachgerechter Entsorgung. Fixpreis nach kostenloser Besichtigung, besenrein & versichert.</p>
-    <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <div class="border rounded-2xl p-6"><h3 class="font-bold">Leistungsumfang</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Abbau & Demontage</li><li>Tragen & Transport</li><li>Entsorgung & Recycling</li></ul></div>
-      <div class="border rounded-2xl p-6"><h3 class="font-bold">Optional</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Endreinigung</li><li>Malerarbeiten</li><li>Wertanrechnung</li></ul></div>
-      <div class="border rounded-2xl p-6"><h3 class="font-bold">Gut zu wissen</h3><p class="mt-2 text-slate-600">Termin oft in 24–48h. Entsorgungsbelege inklusive. Diskret & zuverlässig.</p></div>
+<!-- HERO -->
+<section class="brand-bg text-white">
+  <div class="container mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="uppercase tracking-widest text-white/80 text-xs">Privat & Hausverwaltung · Wien</p>
+      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Wohnung & Haus räumen – <span class="opacity-90">sicher, sauber, besenrein</span></h1>
+      <p class="mt-4 text-lg text-white/90">Abbau, Sortierung, Transport und Entsorgung aus einer Hand. Fixpreis nach kostenloser Besichtigung – versichert, transparent, termintreu.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Kostenlose Besichtigung</a>
+        <a href="tel:+436601234567" class="border border-white/40 text-white px-5 py-3 rounded-xl">Jetzt anrufen</a>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
+        <span>✅ Wertanrechnung möglich</span>
+        <span>✅ Entsorgungsbelege</span>
+        <span>✅ Kurzfristige Termine (24–72h)</span>
+      </div>
     </div>
+    <div class="card p-6 md:p-8 text-slate-700 shadow-soft bg-white">
+      <h3 class="text-xl font-bold">Ideal für</h3>
+      <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
+        <li>Auszug & Übergabe an Hausverwaltung</li>
+        <li>Verkauf / Neuvermietung</li>
+        <li>Sanierungsvorbereitung</li>
+        <li>Räumung nach Mieterwechsel</li>
+      </ul>
+      <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+        <div class="rounded-lg border p-3">
+          <div class="font-semibold">Schonend im Haus</div>
+          <div class="text-slate-500 mt-1">Treppen‑ & Wandschutz</div>
+        </div>
+        <div class="rounded-lg border p-3">
+          <div class="font-semibold">Fixpreis & Protokoll</div>
+          <div class="text-slate-500 mt-1">transparent & sauber</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="text-center card p-4"><div class="text-2xl">🧹</div><div class="text-sm text-slate-600 mt-1">Besenrein</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">♻️</div><div class="text-sm text-slate-600 mt-1">Recycling‑gerecht</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">🧾</div><div class="text-sm text-slate-600 mt-1">Belege inkl.</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">🛡️</div><div class="text-sm text-slate-600 mt-1">Versichert</div></div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Leistungen im Überblick</h2>
+    <p class="mt-3 text-slate-600 max-w-3xl">Mit Team, Plan und Schutzmaterial – damit alles sicher durch Stiegenhaus & Hof geht und am Ende besenrein übergeben wird.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Abbau & Demontage</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Küchen, Schränke, Regale</li>
+          <li>Leuchten & Gardinen</li>
+          <li>Schonende Demontage</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Tragen & Transport</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Sperrige & schwere Teile</li>
+          <li>Treppen‑/Wandschutz</li>
+          <li>Etagen‑ und Hoflogistik</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Entsorgung & Recycling</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Holz, Metall, E‑Schrott, Papier</li>
+          <li>Recycling‑gerechte Abgabe</li>
+          <li>Entsorgungsbelege</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Optional</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Endreinigung (Fenster, Böden)</li>
+          <li>Malerarbeiten „light“</li>
+          <li>Wertanrechnung verwertbarer Stücke</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Sonderposten</h3>
+        <p class="mt-2 text-slate-600">Matratzen, Teppiche, Fahrräder, Klein‑Schutt. Gefahrstoffe nur nach gesonderter Vereinbarung.</p>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Nicht möglich</h3>
+        <p class="mt-2 text-slate-600">Asbest, große Bauschuttmengen, Elektro/Gas‑Arbeiten. Wir vermitteln gern Partnerbetriebe.</p>
+      </div>
+    </div>
+
     <div class="mt-8 flex flex-wrap gap-3">
-      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Kostenlose Besichtigung</a>
+      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Jetzt Besichtigung buchen</a>
+      <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">So läuft’s ab</h2>
+    <div class="mt-8 grid md:grid-cols-4 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 1</div>
+        <div class="font-bold mt-1">Erstgespräch</div>
+        <p class="mt-2 text-slate-600">Kurzbriefing per Telefon/WhatsApp. Fotos helfen bei der Einschätzung.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 2</div>
+        <div class="font-bold mt-1">Besichtigung & Fixpreis</div>
+        <p class="mt-2 text-slate-600">Kostenlos & transparent. Wertanrechnung wird mitbesprochen.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 3</div>
+        <div class="font-bold mt-1">Räumung</div>
+        <p class="mt-2 text-slate-600">Abbau, Sortierung, Transport & Entsorgung – sauber und vorsichtig.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 4</div>
+        <div class="font-bold mt-1">Besenrein & Belege</div>
+        <p class="mt-2 text-slate-600">Abnahme mit dir. Auf Wunsch kurze Fotodoku & Entsorgungsbelege.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FALLBEISPIEL -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Fallbeispiel: 3‑Zimmer‑Wohnung (80 m²)</h2>
+    <div class="mt-6 grid md:grid-cols-5 gap-6">
+      <div class="card p-6 md:col-span-3">
+        <h3 class="font-bold">Ausgangslage</h3>
+        <p class="mt-2 text-slate-600">3. Stock mit Lift, Küche, Wohn‑/Schlafzimmer, Kellerabteil, einzelne verwertbare Stücke.</p>
+        <h3 class="font-bold mt-6">Vorgehen</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Demontage Küche & Schränke</li>
+          <li>Sortierte Trennung & Transport</li>
+          <li>Entsorgung, besenreine Übergabe</li>
+        </ul>
+      </div>
+      <div class="card p-6 md:col-span-2">
+        <h3 class="font-bold">Ergebnis</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Durchführung in 1–1,5 Tagen</li>
+          <li>Fixpreis eingehalten</li>
+          <li>Wertanrechnung berücksichtigt</li>
+        </ul>
+        <p class="mt-4 text-sm text-slate-500">Team: 3–4 Personen · Belege & kurze Fotodoku übergeben</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Richtpreise</h2>
+    <p class="mt-2 text-slate-600 max-w-3xl">Jede Räumung ist anders – diese Werte geben Orientierung. Der Fixpreis folgt nach Besichtigung und kann sich durch Wertanrechnung reduzieren.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 390</div>
+        <div class="font-bold mt-2">Kleinwohnung</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>bis ~40 m²</li><li>kurze Wege</li><li>Entsorgung inkl.</li>
+        </ul>
+      </div>
+      <div class="card p-6 border-2 border-[var(--brand)]">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 690</div>
+        <div class="font-bold mt-2">2–3 Zimmer</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>50–80 m²</li><li>Fixpreis nach Besichtigung</li><li>Belege & Protokoll</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">auf Anfrage</div>
+        <div class="text-4xl font-extrabold">Haus / Projekt</div>
+        <div class="font-bold mt-2">mit Sonderposten</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>Dachboden/Keller</li><li>viel Volumen</li><li>Option Reinigung/Maler</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-6"><a href="/#kontakt" class="underline font-semibold">Fixpreis nach Besichtigung anfordern →</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Häufige Fragen</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <details class="card p-5 open">
+        <summary class="font-semibold cursor-pointer">Könnt ihr ohne meine Anwesenheit räumen?</summary>
+        <p class="mt-2 text-slate-600">Ja. Mit Schlüsselübergabe/Protokoll und klarer Liste – inkl. Fotodoku, wenn gewünscht.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Macht ihr auch Keller/Dachboden?</summary>
+        <p class="mt-2 text-slate-600">Ja – siehe eigene Leistung. Wir planen die Wege und schützen Stiegen & Wände.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Wie funktioniert die Wertanrechnung?</summary>
+        <p class="mt-2 text-slate-600">Verwertbares wird fair angerechnet, der Betrag reduziert den Fixpreis. Transparente Aufstellung.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Wie schnell gibt es Termine?</summary>
+        <p class="mt-2 text-slate-600">Oft innerhalb von 24–72 Stunden – am besten kurz anrufen oder per E‑Mail/WhatsApp melden.</p>
+      </details>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Beratung & Termin</a>
       <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-slate-900 text-slate-200">
   <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
-    <div><div class="text-xl font-extrabold">Klardenk Räumdienst</div><p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p></div>
-    <div><div class="font-bold">Leistungen</div>
+    <div>
+      <div class="text-xl font-extrabold">Klardenk Räumdienst</div>
+      <p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p>
+    </div>
+    <div>
+      <div class="font-bold">Leistungen</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
         <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li>
@@ -78,14 +310,16 @@
         <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
       </ul>
     </div>
-    <div><div class="font-bold">Kontakt</div>
+    <div>
+      <div class="font-bold">Kontakt</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
         <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
         <li>Wien</li>
       </ul>
     </div>
-    <div><div class="font-bold">Rechtliches</div>
+    <div>
+      <div class="font-bold">Rechtliches</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="/impressum.html">Impressum</a></li>
         <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
@@ -94,5 +328,10 @@
   </div>
   <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="y"></span> Klardenk Räumdienst</div>
 </footer>
-<script>document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));
+  document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
