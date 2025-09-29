@@ -1,20 +1,23 @@
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Reinigung & Kleinreparaturen | Klardenk Wien</title>
-  <meta name="description" content="Besenrein plus: Endreinigung, Malerarbeiten, Dübel schließen – alles aus einer Hand."/>
+  <meta name="description" content="Besenrein plus: Endreinigung, Ausbesserungen, Malerarbeiten und kleine Reparaturen – alles aus einer Hand. Fixpreis nach Besichtigung."/>
   <link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--brand:#3c5380}
     .brand-bg{background:var(--brand)}
+    .brand{color:var(--brand)}
     .container{max-width:1120px}
     html{scroll-behavior:smooth}
+    .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+    .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
   </style>
 </head>
 <body class="antialiased text-slate-800">
 
   <!-- HEADER (Unterseiten-Version) -->
-  <!-- siehe Abschnitt B -->
   <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -38,39 +41,241 @@
     </div>
   </header>
 
+  <!-- HERO -->
+  <section class="brand-bg text-white">
+    <div class="container mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-white/80 text-xs">Besenrein plus · Wien & Umgebung</p>
+        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Reinigung & Kleinreparaturen – <span class="opacity-90">die perfekte Übergabe</span></h1>
+        <p class="mt-4 text-lg text-white/90">Nach der Räumung übernehmen wir Endreinigung, Ausbesserungen und kleine Malerarbeiten – sauber dokumentiert, termintreu und fair im Fixpreis.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Angebot anfordern</a>
+          <a href="mailto:klardenk@tuta.io" class="border border-white/40 text-white px-5 py-3 rounded-xl">E‑Mail</a>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
+          <span>✅ Endreinigung & Ausbesserungen</span>
+          <span>✅ Malerarbeiten light</span>
+          <span>✅ Übergabeprotokoll</span>
+        </div>
+      </div>
+      <div class="card p-6 md:p-8 text-slate-700 shadow-soft bg-white">
+        <h3 class="text-xl font-bold">Gut für</h3>
+        <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
+          <li>Wohnungs‑/Hausübergaben</li>
+          <li>Vermietungen & Verkauf</li>
+          <li>Räumungen nach Auszug</li>
+          <li>Reparaturlisten der Hausverwaltung</li>
+        </ul>
+        <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Kurzfristige Termine</div>
+            <div class="text-slate-500 mt-1">24–72h möglich</div>
+          </div>
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Fixpreis & Protokoll</div>
+            <div class="text-slate-500 mt-1">transparent & sauber</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="text-center card p-4"><div class="text-2xl">🧼</div><div class="text-sm text-slate-600 mt-1">Endreinigung</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">🎨</div><div class="text-sm text-slate-600 mt-1">Malerarbeiten light</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">🧰</div><div class="text-sm text-slate-600 mt-1">Kleine Reparaturen</div></div>
+    <div class="text-center card p-4"><div class="text-2xl">📝</div><div class="text-sm text-slate-600 mt-1">Übergabeprotokoll</div></div>
+  </section>
+
+  <!-- MODULE / LEISTUNGEN -->
   <section class="bg-slate-50">
-    <div class="container mx-auto px-4 py-12">
-      <h1 class="text-3xl md:text-4xl font-extrabold">Reinigung & Kleinreparaturen</h1>
-      <p class="mt-3 text-slate-600 max-w-3xl">Wir übergeben besenrein – auf Wunsch inkl. Endreinigung, Ausbesserungen und Malerarbeiten.</p>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Was wir für dich übernehmen</h2>
+      <p class="mt-3 text-slate-600 max-w-3xl">Wir bringen alles mit – Material, Werkzeuge und ein Auge fürs Detail. Ziel: eine problemlose Übergabe.</p>
 
       <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Reinigung</h3>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Reinigung</h3>
           <ul class="mt-2 list-disc pl-5 text-slate-600">
-            <li>Grundreinigung</li><li>Fenster & Böden</li><li>Geruchsneutralisation</li>
+            <li>Grundreinigung (Böden, Oberflächen)</li>
+            <li>Fenster, Rahmen, Leisten</li>
+            <li>Geruchsneutralisation</li>
           </ul>
         </div>
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Kleinreparaturen</h3>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Kleinreparaturen</h3>
           <ul class="mt-2 list-disc pl-5 text-slate-600">
-            <li>Dübel schließen</li><li>Ausbesserungen</li><li>Kleinere Malerarbeiten</li>
+            <li>Dübel & Bohrlöcher schließen</li>
+            <li>Kleinere Ausbesserungen</li>
+            <li>Silikonfugen punktuell erneuern</li>
           </ul>
         </div>
-        <div class="border rounded-2xl p-6">
-          <h3 class="font-bold">Für wen?</h3>
-          <p class="mt-2 text-slate-600">Vermieter, Auszug, Übergabe an Hausverwaltung.</p>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Malerarbeiten (light)</h3>
+          <ul class="mt-2 list-disc pl-5 text-slate-600">
+            <li>Ausbesserungen & Flecken</li>
+            <li>Teilflächen/„Weiße Wand“</li>
+            <li>Kanten & Auszüge nacharbeiten</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Extras</h3>
+          <p class="mt-2 text-slate-600">Kleinmontagen (z. B. Sockelleisten), Lampentausch, Türjustierungen – nach Rücksprache.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Nicht enthalten</h3>
+          <p class="mt-2 text-slate-600">Große Sanierungen, Elektro‑/Gas‑Arbeiten, statische Eingriffe. Wir empfehlen gern Partnerbetriebe.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold text-lg">Dokumente</h3>
+          <p class="mt-2 text-slate-600">Auf Wunsch mit kurzer Fotodoku & Übergabeprotokoll für die Hausverwaltung.</p>
         </div>
       </div>
 
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Angebot anfordern</a>
-        <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail</a>
+        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Kostenloses Angebot</a>
+        <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKETE -->
+  <section>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Pakete – passend zum Bedarf</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">Alle Pakete sind kombinierbar. Der Fixpreis folgt nach Besichtigung.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Basis</div>
+          <div class="text-3xl font-extrabold mt-1">Besenrein</div>
+          <ul class="mt-3 list-disc pl-5 text-slate-600">
+            <li>Fegen, wischen, Staubflächen</li>
+            <li>Abfallentsorgung inkl.</li>
+            <li>Übergabe‑Check</li>
+          </ul>
+        </div>
+        <div class="card p-6 border-2 border-[var(--brand)]">
+          <div class="text-sm text-slate-500">Beliebt</div>
+          <div class="text-3xl font-extrabold mt-1">Plus</div>
+          <ul class="mt-3 list-disc pl-5 text-slate-600">
+            <li>Basis + Fenster & Rahmen</li>
+            <li>Dübel schließen & kleine Spachtelarbeiten</li>
+            <li>Kanten/Malerarbeiten light</li>
+          </ul>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Umfang</div>
+          <div class="text-3xl font-extrabold mt-1">Premium</div>
+          <ul class="mt-3 list-disc pl-5 text-slate-600">
+            <li>Plus + Teilflächen streichen</li>
+            <li>Silikonstellen erneuern</li>
+            <li>Fotodoku & Protokoll</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF (TIMELINE) -->
+  <section class="bg-slate-50">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">So läuft’s ab</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 1</div>
+          <div class="font-bold mt-1">Besichtigung</div>
+          <p class="mt-2 text-slate-600">Vor Ort oder via Fotos/Video. Wir klären Punkte‑/Mängelliste.</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 2</div>
+          <div class="font-bold mt-1">Fixpreis & Termin</div>
+          <p class="mt-2 text-slate-600">Transparenter Preis inkl. Material. Kurzfristige Slots möglich.</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 3</div>
+          <div class="font-bold mt-1">Umsetzung</div>
+          <p class="mt-2 text-slate-600">Reinigung, Ausbesserungen, Malerarbeiten light – sauber & zügig.</p>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">Schritt 4</div>
+          <div class="font-bold mt-1">Übergabe</div>
+          <p class="mt-2 text-slate-600">Gemeinsamer Check. Auf Wunsch Protokoll & Fotodoku.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE (Richtwerte) -->
+  <section>
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Richtpreise</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">Die finalen Kosten hängen vom Zustand und Umfang ab. Der Fixpreis folgt nach Besichtigung.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">ab</div>
+          <div class="text-4xl font-extrabold">€ 149</div>
+          <div class="font-bold mt-2">Besenrein (Basis)</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>Kleinwohnung/Abteil</li><li>ohne Malerarbeiten</li><li>schnelle Übergabe</li>
+          </ul>
+        </div>
+        <div class="card p-6 border-2 border-[var(--brand)]">
+          <div class="text-sm text-slate-500">ab</div>
+          <div class="text-4xl font-extrabold">€ 290</div>
+          <div class="font-bold mt-2">Plus‑Paket</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>Fenster & Rahmen</li><li>Dübel schließen</li><li>kleine Ausbesserungen</li>
+          </ul>
+        </div>
+        <div class="card p-6">
+          <div class="text-sm text-slate-500">auf Anfrage</div>
+          <div class="text-4xl font-extrabold">Premium</div>
+          <div class="font-bold mt-2">mit Maler light</div>
+          <ul class="mt-3 text-slate-600 list-disc pl-5">
+            <li>Teilflächen streichen</li><li>Silikonstellen</li><li>Fotodoku</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6"><a href="/#kontakt" class="underline font-semibold">Fixpreis nach Besichtigung anfordern →</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Häufige Fragen</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="card p-5 open">
+          <summary class="font-semibold cursor-pointer">Übernehmt ihr auch größere Malerarbeiten?</summary>
+          <p class="mt-2 text-slate-600">Wir bieten „Maler light“ (Ausbesserungen/Teilflächen). Für Komplettanstriche empfehlen wir Partnerbetriebe.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Dichtet ihr Silikonfugen komplett neu ab?</summary>
+          <p class="mt-2 text-slate-600">Punktuell ja. Bei großflächiger Sanierung koordinieren wir gern Fachbetriebe.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Braucht ihr mich vor Ort?</summary>
+          <p class="mt-2 text-slate-600">Nicht zwingend. Mit Schlüsselübergabe und klarer Liste erledigen wir alles – inkl. Protokoll.</p>
+        </details>
+        <details class="card p-5">
+          <summary class="font-semibold cursor-pointer">Was, wenn neue Mängel auffallen?</summary>
+          <p class="mt-2 text-slate-600">Wir dokumentieren und melden uns – keine Überraschungen ohne Freigabe.</p>
+        </details>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Beratung & Termin</a>
+        <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER (wie Startseite) -->
-  <!-- kopiert aus index.html -->
   <footer class="bg-slate-900 text-slate-200">
     <div class="container mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
       <div><div class="text-xl font-extrabold">Klardenk Räumdienst</div>
@@ -103,4 +308,5 @@
       document.getElementById('mobileMenu')?.classList.toggle('hidden');
     });
   </script>
-</body></html>
+</body>
+</html>
