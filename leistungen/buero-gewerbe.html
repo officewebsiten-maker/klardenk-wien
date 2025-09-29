@@ -1,27 +1,364 @@
-<!DOCTYPE html><html lang="de"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Büro & Gewerbe | Klardenk Wien</title>
-<meta name="description" content="Büro- und Gewerberäumungen in Wien – außerhalb der Öffnungszeiten, inkl. Aktenvernichtung."/>
-<link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
-<style>:root{--brand:#3c5380}.brand-bg{background:var(--brand)}</style>
-</head><body class="antialiased text-slate-800">
-<!-- Header wie oben -->
-<header class="bg-white sticky top-0 z-40 border-b"><div class="container mx-auto px-4 py-4 flex items-center justify-between"><a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a><nav class="hidden md:flex items-center gap-6 text-sm"><div class="relative group"><button class="inline-flex items-center gap-2 hover:underline">Leistungen<svg width="14" height="14" viewBox="0 0 20 20"><path d="M5 7l5 5 5-5" fill="currentColor"/></svg></button><div class="absolute left-0 mt-2 w-[340px] bg-white border rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition"><ul class="p-2 text-sm"><li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li><li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li><li><a class="block px-3 py-2 rounded hover:bg-slate-50 font-semibold" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li><li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li><li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li><li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li></ul></div></div><a href="/#ablauf" class="hover:underline">Ablauf</a><a href="/#preise" class="hover:underline">Preise</a><a href="/#bewertungen" class="hover:underline">Bewertungen</a><a href="/#kontakt" class="hover:underline">Kontakt</a></nav><button id="menuBtn" class="md:hidden p-2 border rounded-lg">☰</button></div><div id="mobileMenu" class="md:hidden hidden border-t px-4 py-3 text-sm space-y-2"><details open><summary class="py-2 font-semibold">Leistungen</summary><ul class="pl-3 space-y-1"><li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li><li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li><li><a class="underline font-semibold" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li><li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li><li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li><li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li></ul></details><a class="block underline" href="/#ablauf">Ablauf</a><a class="block underline" href="/#preise">Preise</a><a class="block underline" href="/#bewertungen">Bewertungen</a><a class="block underline" href="/#kontakt">Kontakt</a></div></header>
+<meta name="description" content="Büro- und Gewerberäumungen in Wien – außerhalb der Öffnungszeiten, inkl. Aktenvernichtung mit Zertifikat, Dokumentation & Fixpreis nach Besichtigung."/>
+<link rel="icon" href="/favicon.ico"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{--brand:#3c5380}
+  .brand-bg{background:var(--brand)}
+  .brand{color:var(--brand)}
+  .container{max-width:1120px}
+  html{scroll-behavior:smooth}
+  .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+  .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
+</style>
+</head>
+<body class="antialiased text-slate-800">
 
-<section class="bg-slate-50"><div class="container mx-auto px-4 py-12">
-  <h1 class="text-3xl md:text-4xl font-extrabold">Büro & Gewerbe räumen</h1>
-  <p class="mt-3 text-slate-600 max-w-3xl">Räumung außerhalb Ihrer Geschäftszeiten. Auf Wunsch inkl. DSGVO‑konformer Aktenvernichtung (Zertifikat).</p>
-  <div class="mt-8 grid md:grid-cols-3 gap-6">
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Branchen</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Büros, Praxen</li><li>Handel & Lager</li><li>Gastro</li></ul></div>
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Ablauf</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Bestandsaufnahme</li><li>Terminierung off-hours</li><li>Besenrein</li></ul></div>
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Nachweise</h3><p class="mt-2 text-slate-600">Entsorgungs- & Vernichtungsbelege auf Wunsch.</p></div>
-  </div>
-  <div class="mt-8 flex flex-wrap gap-3">
-    <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Termin anfragen</a>
-    <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
-  </div>
-</div></section>
+<!-- Header (Unterseiten: Links zeigen auf /#...) -->
+<header class="bg-white sticky top-0 z-40 border-b">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
 
-<footer class="bg-slate-900 text-slate-200"><div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8"><div><div class="text-xl font-extrabold">Klardenk Räumdienst</div><p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p></div><div><div class="font-bold">Leistungen</div><ul class="mt-3 space-y-2 text-slate-400"><li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li><li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li><li><a class="underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li><li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass/Verlassenschaft</a></li><li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li><li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li></ul></div><div><div class="font-bold">Kontakt</div><ul class="mt-3 space-y-2 text-slate-400"><li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li><li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li><li>Wien</li></ul></div><div><div class="font-bold">Rechtliches</div><ul class="mt-3 space-y-2 text-slate-400"><li><a class="underline" href="/impressum.html">Impressum</a></li><li><a class="underline" href="/datenschutz.html">Datenschutz</a></li></ul></div></div><div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="y"></span> Klardenk Räumdienst</div></footer>
-<script>document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <div class="relative group">
+        <button class="inline-flex items-center gap-2 hover:underline">Leistungen
+          <svg width="14" height="14" viewBox="0 0 20 20"><path d="M5 7l5 5 5-5" fill="currentColor"/></svg>
+        </button>
+        <div class="absolute left-0 mt-2 w-[340px] bg-white border rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
+          <ul class="p-2 text-sm">
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50 font-semibold" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li>
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
+            <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="/#ablauf" class="hover:underline">Ablauf</a>
+      <a href="/#preise" class="hover:underline">Preise</a>
+      <a href="/#bewertungen" class="hover:underline">Bewertungen</a>
+      <a href="/#kontakt" class="hover:underline">Kontakt</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
+  </div>
+
+  <!-- Mobile -->
+  <div id="mobileMenu" class="md:hidden hidden border-t px-4 py-3 text-sm space-y-2">
+    <details open>
+      <summary class="py-2 font-semibold">Leistungen</summary>
+      <ul class="pl-3 space-y-1">
+        <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
+        <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
+        <li><a class="underline font-semibold" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
+        <li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li>
+        <li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
+        <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
+      </ul>
+    </details>
+    <a class="block underline" href="/#ablauf">Ablauf</a>
+    <a class="block underline" href="/#preise">Preise</a>
+    <a class="block underline" href="/#bewertungen">Bewertungen</a>
+    <a class="block underline" href="/#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="brand-bg text-white">
+    <div class="container mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-white/80 text-xs">B2B‑Service · Wien & Umgebung</p>
+        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Büro & Gewerbe räumen – <span class="opacity-90">außerhalb Ihrer Öffnungszeiten</span></h1>
+        <p class="mt-4 text-lg text-white/90">Diskret, planbar, fixpreisfähig. Auf Wunsch mit DSGVO‑konformer Aktenvernichtung (Zertifikat) und lückenloser Dokumentation.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Termin anfragen</a>
+          <a href="mailto:klardenk@tuta.io" class="border border-white/40 text-white px-5 py-3 rounded-xl">E‑Mail schreiben</a>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
+          <span>✅ Arbeiten „off‑hours“ & Wochenende</span>
+          <span>✅ Haftpflichtversichert</span>
+          <span>✅ Entsorgungs‑ & Vernichtungsbelege</span>
+        </div>
+      </div>
+      <div class="card p-6 md:p-8 text-slate-700 shadow-soft">
+        <h3 class="text-xl font-bold">Ideal für</h3>
+        <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
+          <li>Büros, Kanzleien, Agenturen</li>
+          <li>Praxen & Studios</li>
+          <li>Retail / Lager / Gastro</li>
+          <li>Zwischenmieten & Pop‑Ups</li>
+        </ul>
+        <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Schnelle Terminierung</div>
+            <div class="text-slate-500 mt-1">24–72h möglich</div>
+          </div>
+          <div class="rounded-lg border p-3">
+            <div class="font-semibold">Fixpreis nach Besichtigung</div>
+            <div class="text-slate-500 mt-1">transparent & fair</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="text-center card p-4"><div class="text-2xl">🛡️</div><div class="text-sm text-slate-600 mt-1">Versichert</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">⏱️</div><div class="text-sm text-slate-600 mt-1">Flexible Slots</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">📄</div><div class="text-sm text-slate-600 mt-1">Zertifikate & Belege</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">🔒</div><div class="text-sm text-slate-600 mt-1">DSGVO‑konform</div></div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Leistungen für Unternehmen</h2>
+    <p class="mt-3 text-slate-600 max-w-3xl">Von der Bestandsaufnahme bis zur besenreinen Übergabe – mit Plan, Ansprechpartner und dokumentierten Wegen.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Demontage & Logistik</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Büromöbel, Regale, Leuchten</li>
+          <li>IT‑Equipment fachgerecht abgebaut</li>
+          <li>Transport & Etagenlogistik</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Trennung & Entsorgung</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Metall, Holz, E‑Schrott, Papier</li>
+          <li>Recycling‑gerechte Verwertung</li>
+          <li>Entsorgungsbelege inkl.</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Akten & Datenträger</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>DSGVO‑konforme Vernichtung</li>
+          <li>Zertifikat & Übergabeprotokoll</li>
+          <li>Versiegelte Transportbehälter</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Sonderfälle</h3>
+        <p class="mt-2 text-slate-600">Inventaraufnahme, Zwischenlagerung, Express‑Räumung, Wochenend‑Termine.</p>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Nacharbeiten</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Dübel schließen & Ausbesserungen</li>
+          <li>Grundreinigung/Endreinigung</li>
+          <li>Schlüssel‑/Übergabeprotokoll</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Wertanrechnung</h3>
+        <p class="mt-2 text-slate-600">Verwertbare Positionen rechnen wir fair an – reduziert Ihren Gesamtpreis.</p>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Kostenlose Besichtigung</a>
+      <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF (TIMELINE) -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Ablauf – planbar & diskret</h2>
+    <div class="mt-8 grid md:grid-cols-4 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 1</div>
+        <div class="font-bold mt-1">Bestandsaufnahme</div>
+        <p class="mt-2 text-slate-600">Kurzbriefing & Besichtigung (vor Ort oder per Video/Fotos). Wir prüfen Zugänge, Lift, Etagen & Zeitfenster.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 2</div>
+        <div class="font-bold mt-1">Fixpreis & Timing</div>
+        <p class="mt-2 text-slate-600">Transparenter Fixpreis, Slot außerhalb Ihrer Öffnungszeiten, Verantwortliche/r als fester Kontakt.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 3</div>
+        <div class="font-bold mt-1">Durchführung</div>
+        <p class="mt-2 text-slate-600">Demontage, Trennung, Transport, Entsorgung – leise, sauber, abgesichert.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 4</div>
+        <div class="font-bold mt-1">Besenrein & Nachweise</div>
+        <p class="mt-2 text-slate-600">Gemeinsame Abnahme. Auf Wunsch: Entsorgungs‑ und Vernichtungszertifikate, Fotodoku, Übergabeprotokoll.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHEN / SPEZIALFÄLLE -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Branchen & Spezialfälle</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold">Büro & Agentur</h3>
+        <p class="mt-2 text-slate-600">Arbeitsplätze, Meetingräume, Küche. Behutsam mit IT & vertraulichen Unterlagen.</p>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold">Praxis & Studio</h3>
+        <p class="mt-2 text-slate-600">Sensible Geräte, Terminfenster außerhalb der Behandlungszeiten.</p>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold">Retail / Lager</h3>
+        <p class="mt-2 text-slate-600">Regale, Warenträger, Backstore, Entsorgung von Verpackungsmengen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Fallbeispiel: Agentur‑Räumung (120 m²)</h2>
+    <div class="mt-6 grid md:grid-cols-5 gap-6">
+      <div class="card p-6 md:col-span-3">
+        <h3 class="font-bold">Ausgangslage</h3>
+        <p class="mt-2 text-slate-600">5 Räume, 2. Stock mit Lift, 18 Arbeitsplätze, kurz laufender Mietvertrag.</p>
+        <h3 class="font-bold mt-6">Lösung</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Freitag 18:00–23:00 Demontage & Trennung</li>
+          <li>Samstag 08:00–14:00 Abtransport & Reinigung</li>
+          <li>Aktenvernichtung Stufe P‑4 inkl. Zertifikat</li>
+        </ul>
+      </div>
+      <div class="card p-6 md:col-span-2">
+        <h3 class="font-bold">Ergebnis</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Besenrein, termintreu</li>
+          <li>Dokumentation & Belege übergeben</li>
+          <li>Wertanrechnung für Mobiliar</li>
+        </ul>
+        <p class="mt-4 text-sm text-slate-500">Dauer gesamt: 1,5 Tage · Team: 4 Personen</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE (B2B Korridor) -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Preiskorridor für Unternehmen</h2>
+    <p class="mt-2 text-slate-600 max-w-3xl">Jeder Standort ist anders – diese Richtwerte helfen bei der Planung. Der Fixpreis folgt nach Besichtigung.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 590</div>
+        <div class="font-bold mt-2">Kleines Büro</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>bis ~40 m²</li><li>1–2 Räume</li><li>Entsorgung inkl.</li>
+        </ul>
+      </div>
+      <div class="card p-6 border-2 border-[var(--brand)]">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 1.290</div>
+        <div class="font-bold mt-2">Agentur / Praxis</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>80–150 m²</li><li>außerhalb Öffnungszeiten</li><li>Belege & Protokoll</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">auf Anfrage</div>
+        <div class="text-4xl font-extrabold">Projekt</div>
+        <div class="font-bold mt-2">Retail / Lager</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>Regalabbau, Paletten</li><li>Großmengen‑Entsorgung</li><li>Zeitfensterkoordination</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-6"><a href="/#kontakt" class="underline font-semibold">Fixpreis nach Besichtigung anfordern →</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Häufige Fragen</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <details class="card p-5 open">
+        <summary class="font-semibold cursor-pointer">Könnt ihr abends/wochenends arbeiten?</summary>
+        <p class="mt-2 text-slate-600">Ja. Wir planen Off‑Hours‑Slots, damit Ihr Betrieb ungestört bleibt.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Wie funktioniert die Aktenvernichtung?</summary>
+        <p class="mt-2 text-slate-600">Nach Schutzklasse/Stufe (z. B. P‑4). Transport versiegelt, Vernichtung dokumentiert, Zertifikat inklusive.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Was kostet es konkret?</summary>
+        <p class="mt-2 text-slate-600">Nach Besichtigung erhalten Sie einen Fixpreis – ohne versteckte Kosten. Wertanrechnung reduziert den Endpreis.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Übernehmt ihr IT‑Entsorgung?</summary>
+        <p class="mt-2 text-slate-600">Ja, fachgerechte Entsorgung von E‑Schrott inklusive Datenträgervernichtung nach Vereinbarung.</p>
+      </details>
+    </div>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Beratung & Termin</a>
+      <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-200">
+  <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="text-xl font-extrabold">Klardenk Räumdienst</div>
+      <p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p>
+    </div>
+    <div>
+      <div class="font-bold">Leistungen</div>
+      <ul class="mt-3 space-y-2 text-slate-400">
+        <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
+        <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li>
+        <li><a class="underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
+        <li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass/Verlassenschaft</a></li>
+        <li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
+        <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-bold">Kontakt</div>
+      <ul class="mt-3 space-y-2 text-slate-400">
+        <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
+        <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
+        <li>Wien</li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-bold">Rechtliches</div>
+      <ul class="mt-3 space-y-2 text-slate-400">
+        <li><a class="underline" href="/impressum.html">Impressum</a></li>
+        <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="y"></span> Klardenk Räumdienst</div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));
+  document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
