@@ -4,39 +4,104 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Impressum – Klardenk Räumdienst</title>
+  <link rel="icon" href="/favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--brand:#3c5380}
+    .brand{color:var(--brand)}
+    .brand-bg{background:var(--brand)}
+    .container{max-width:1120px}
+  </style>
 </head>
-<body>
-  <h1>Impressum</h1>
+<body class="antialiased text-slate-800 bg-slate-50">
 
-  <p><strong>Betreiber / Firmenname:</strong><br>
-  Klardenk Räumdienst (Inhaber: Herr [Vorname Nachname])</p>
+  <!-- Headerbar klein -->
+  <div class="brand-bg text-white">
+    <div class="container mx-auto px-4 py-6">
+      <a href="/" class="text-white/90 hover:text-white text-sm tracking-wide">← Zur Startseite</a>
+      <h1 class="mt-2 text-3xl md:text-4xl font-extrabold">Impressum</h1>
+      <p class="mt-1 text-white/80">Klardenk Räumdienst – rechtliche Angaben</p>
+    </div>
+  </div>
 
-  <p><strong>Geschäftsanschrift:</strong><br>
-  Musterstraße 1<br>
-  1010 Wien<br>
-  Österreich</p>
+  <!-- Inhalt -->
+  <main class="container mx-auto px-4 py-10 space-y-10">
+    <!-- Company Card -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">Betreiber</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6 text-slate-700">
+        <div>
+          <p><span class="font-semibold">Firma:</span><br> Klardenk Räumdienst [e.U. / GmbH]</p>
+          <p class="mt-3"><span class="font-semibold">Inhaberin/Inhaber / Geschäftsführer:</span><br> [Vorname Nachname]</p>
+          <p class="mt-3"><span class="font-semibold">Anschrift:</span><br> [Straße Hausnummer]<br> [PLZ] Wien, Österreich</p>
+        </div>
+        <div>
+          <p><span class="font-semibold">Kontakt:</span><br>
+            Tel. <a class="underline" href="tel:+43[Nummer]">+43 [Nummer]</a><br>
+            E‑Mail <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a>
+          </p>
+          <p class="mt-3"><span class="font-semibold">Web:</span><br> <a class="underline" href="https://[IhreDomain]">[IhreDomain]</a></p>
+        </div>
+      </div>
+    </section>
 
-  <p><strong>Kontakt:</strong><br>
-  Telefon: +43 660 1234567<br>
-  E‑Mail: klardenk@tuta.io</p>
+    <!-- Register/UID -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">Unternehmensangaben</h2>
+      <div class="mt-4 grid md:grid-cols-3 gap-6 text-slate-700">
+        <div>
+          <p class="font-semibold">Rechtsform</p>
+          <p class="mt-1">[e.U. / GmbH / OG]</p>
+        </div>
+        <div>
+          <p class="font-semibold">Firmenbuch</p>
+          <p class="mt-1">[FN 123456a], Firmenbuchgericht: [z. B. Handelsgericht Wien]</p>
+        </div>
+        <div>
+          <p class="font-semibold">UID‑Nr.</p>
+          <p class="mt-1">ATU[xxxxxxx]</p>
+        </div>
+      </div>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-slate-700">
+        <div>
+          <p class="font-semibold">Gewerbebehörde</p>
+          <p class="mt-1">[zuständige Behörde], Österreich</p>
+        </div>
+        <div>
+          <p class="font-semibold">Kammer</p>
+          <p class="mt-1">[Wirtschaftskammer Wien], Sparte [Gewerbe/Handwerk]</p>
+        </div>
+        <div>
+          <p class="font-semibold">Berufsbezeichnung</p>
+          <p class="mt-1">Entrümpelungen / Räumungen (Österreich)</p>
+        </div>
+      </div>
+    </section>
 
-  <p><strong>Rechtsform:</strong><br>
-  [z. B. Einzelunternehmen (e.U.) / GmbH / OG – bitte genaue Rechtsform eintragen]</p>
+    <!-- Haftung/Links -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">Haftung & Urheberrecht</h2>
+      <div class="mt-4 space-y-4 text-slate-700">
+        <p><span class="font-semibold">Inhalte:</span> Wir erstellen unsere Inhalte mit Sorgfalt, übernehmen jedoch keine Gewähr für Richtigkeit, Vollständigkeit und Aktualität.</p>
+        <p><span class="font-semibold">Externe Links:</span> Für Inhalte verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+        <p><span class="font-semibold">Urheberrecht:</span> Texte, Bilder und Grafiken dieser Website unterliegen dem Urheberrecht. Jede Verwertung bedarf unserer Zustimmung.</p>
+      </div>
+    </section>
 
-  <p><strong>Firmenbuch:</strong><br>
-  Firmenbuchnummer: [falls eingetragen] (Firma gemäß Firmenbuch: [genauer Firmenwortlaut])<br>
-  Firmenbuchgericht: [z. B. Handelsgericht Wien]</p>
+    <!-- Kontakt Short -->
+    <section class="rounded-2xl bg-gradient-to-br from-slate-100 to-white border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">Kontakt</h2>
+      <p class="mt-3 text-slate-700">Fragen? Wir sind erreichbar unter <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a> oder telefonisch unter <a class="underline" href="tel:+43[Nummer]">+43 [Nummer]</a>.</p>
+    </section>
+  </main>
 
-  <p><strong>UID‑Nummer (USt‑ID):</strong><br>
-  UID: AT[12345678] (falls vorhanden)</p>
+  <!-- Footer mini -->
+  <footer class="text-center text-slate-500 text-sm py-8">
+    <div>© <span id="year"></span> Klardenk Räumdienst – Wien</div>
+    <div class="mt-2"><a class="underline" href="/datenschutz.html">Datenschutz</a></div>
+  </footer>
 
-  <p><strong>Aufsichtsbehörde / Berufsrecht (falls relevant):</strong><br>
-  [z. B. Gewerbebehörde, Kammerangaben oder Berufsbezeichnung – nur wenn berufsspezifisch nötig]</p>
-
-  <p><strong>Haftungshinweis:</strong><br>
-  Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
-
-  <hr/>
-  <p>Stand: [Datum]</p>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
+
