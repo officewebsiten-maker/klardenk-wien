@@ -1,10 +1,25 @@
-<!DOCTYPE html><html lang="de"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Nachlass & Verlassenschaft | Klardenk Räumdienst Wien</title>
-<meta name="description" content="Einfühlsame Räumungen bei Nachlass & Verlassenschaft in Wien – mit Wertanrechnung, Fixpreis, besenrein & versichert."/>
-<link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
-<style>:root{--brand:#3c5380}.brand-bg{background:var(--brand)}</style>
-</head><body class="antialiased text-slate-800">
+<meta name="description" content="Einfühlsame Räumungen bei Nachlass & Verlassenschaft in Wien – diskret, transparent und besenrein. Mit Wertanrechnung, Fixpreis nach Besichtigung & Dokumentation."/>
+<link rel="icon" href="/favicon.ico"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{--brand:#3c5380}
+  .brand-bg{background:var(--brand)}
+  .brand{color:var(--brand)}
+  .container{max-width:1120px}
+  html{scroll-behavior:smooth}
+  .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+  .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
+</style>
+</head>
+<body class="antialiased text-slate-800">
+
+<!-- HEADER -->
 <header class="bg-white sticky top-0 z-40 border-b">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -29,7 +44,7 @@
       <a href="/#bewertungen" class="hover:underline">Bewertungen</a>
       <a href="/#kontakt" class="hover:underline">Kontakt</a>
     </nav>
-    <button id="menuBtn" class="md:hidden p-2 border rounded-lg">☰</button>
+    <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
   </div>
   <div id="mobileMenu" class="md:hidden hidden border-t px-4 py-3 text-sm space-y-2">
     <details open><summary class="py-2 font-semibold">Leistungen</summary>
@@ -49,37 +64,244 @@
   </div>
 </header>
 
-<section class="bg-slate-50">
-  <div class="container mx-auto px-4 py-12">
-    <h1 class="text-3xl md:text-4xl font-extrabold">Nachlass & Verlassenschaft</h1>
-    <p class="mt-3 text-slate-600 max-w-3xl">Einfühlsame, diskrete Räumungen in Wien. Sichtung, Sortierung, Transport und fachgerechte Entsorgung – auf Wunsch mit <b>Wertanrechnung</b> zur Reduktion des Endpreises.</p>
-    <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-bold">Leistungsumfang</h3>
-        <ul class="mt-2 list-disc pl-5 text-slate-600">
-          <li>Sichtung & Dokumentation</li><li>Abbau & Transport</li><li>Entsorgungsbelege</li>
-        </ul>
+<!-- HERO -->
+<section class="brand-bg text-white">
+  <div class="container mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="uppercase tracking-widest text-white/80 text-xs">Einfühlsam · Diskret · Transparent</p>
+      <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Nachlass & Verlassenschaft – <span class="opacity-90">wir nehmen Ihnen Last ab</span></h1>
+      <p class="mt-4 text-lg text-white/90">Sichtung, Sortierung, Wertanrechnung und Räumung bis zur besenreinen Übergabe. Auf Wunsch mit Dokumentation für Notar/Hausverwaltung.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Kostenlose Besichtigung</a>
+        <a href="tel:+436601234567" class="border border-white/40 text-white px-5 py-3 rounded-xl">Jetzt anrufen</a>
       </div>
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-bold">Wertanrechnung</h3>
-        <p class="mt-2 text-slate-600">Verwertbares wird angerechnet – transparent & fair.</p>
-      </div>
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-bold">Koordination</h3>
-        <p class="mt-2 text-slate-600">Abstimmung mit Hausverwaltung/Notar möglich. Termine oft in 24–48h.</p>
+      <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
+        <span>✅ Sensible Handhabung</span>
+        <span>✅ Wertanrechnung</span>
+        <span>✅ Fixpreis nach Besichtigung</span>
       </div>
     </div>
+    <div class="card p-6 md:p-8 text-slate-700 shadow-soft bg-white">
+      <h3 class="text-xl font-bold">Was wir für Sie übernehmen</h3>
+      <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
+        <li>Sichtung & sortierte Trennung</li>
+        <li>Abbau, Verpackung & Transport</li>
+        <li>Recycling‑gerechte Entsorgung</li>
+        <li>Wertanrechnung verwertbarer Stücke</li>
+        <li>Besenreine Übergabe</li>
+      </ul>
+      <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+        <div class="rounded-lg border p-3">
+          <div class="font-semibold">Kurzfristige Termine</div>
+          <div class="text-slate-500 mt-1">24–72h möglich</div>
+        </div>
+        <div class="rounded-lg border p-3">
+          <div class="font-semibold">Dokumentation</div>
+          <div class="text-slate-500 mt-1">für Notar/Verwaltung</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="text-center card p-4"><div class="text-2xl">🧭</div><div class="text-sm text-slate-600 mt-1">Sensible Begleitung</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">📄</div><div class="text-sm text-slate-600 mt-1">Dokumentation</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">🧹</div><div class="text-sm text-slate-600 mt-1">Besenrein</div></div>
+  <div class="text-center card p-4"><div class="text-2xl">🛡️</div><div class="text-sm text-slate-600 mt-1">Versichert</div></div>
+</section>
+
+<!-- LEISTUNGEN / MODULE -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Leistungsbausteine</h2>
+    <p class="mt-3 text-slate-600 max-w-3xl">Wir kombinieren die Module passend zu Ihrer Situation – transparent und planbar.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Sichtung & Sortierung</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Behutsame Durchsicht</li>
+          <li>Trennung nach Wert, Erinnerung, Entsorgung</li>
+          <li>Auf Wunsch Fotodokumentation</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Wertanrechnung</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Verwertbares wird fair angerechnet</li>
+          <li>Transparente Aufstellung</li>
+          <li>Reduziert Ihren Endpreis</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Räumung & Entsorgung</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Schonender Abbau & Transport</li>
+          <li>Recycling‑gerechte Wege</li>
+          <li>Besenreine Übergabe</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Koordination</h3>
+        <p class="mt-2 text-slate-600">Abstimmung mit Hausverwaltung, Nachlasspfleger:in oder Notariat – inkl. Terminfenster & Schlüsselübergabe.</p>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Nacharbeiten</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Dübel schließen & kleine Ausbesserungen</li>
+          <li>Grundreinigung/Endreinigung</li>
+          <li>Übergabeprotokoll</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-lg">Sonderfälle</h3>
+        <p class="mt-2 text-slate-600">Dachboden/Keller, umfangreiche Sammlungen, sensible Unterlagen (separate Übergabe).</p>
+      </div>
+    </div>
+
     <div class="mt-8 flex flex-wrap gap-3">
       <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Kostenlose Besichtigung</a>
+      <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail schreiben</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Ablauf – mit Ruhe & Struktur</h2>
+    <div class="mt-8 grid md:grid-cols-4 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 1</div>
+        <div class="font-bold mt-1">Erstes Gespräch</div>
+        <p class="mt-2 text-slate-600">Telefonisch oder vor Ort. Wir hören zu, klären Umfang & Wünsche.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 2</div>
+        <div class="font-bold mt-1">Besichtigung & Fixpreis</div>
+        <p class="mt-2 text-slate-600">Kostenlos & transparent. Wertanrechnung wird bereits besprochen.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 3</div>
+        <div class="font-bold mt-1">Räumung</div>
+        <p class="mt-2 text-slate-600">Sichtung, Sortierung, Abbau & Transport – diskret und sorgfältig.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">Schritt 4</div>
+        <div class="font-bold mt-1">Übergabe & Nachweise</div>
+        <p class="mt-2 text-slate-600">Besenrein. Auf Wunsch mit Belegen & Fotodokumentation für Akten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FALLBEISPIEL -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Fallbeispiel: Verlassenschaft (70 m²)</h2>
+    <div class="mt-6 grid md:grid-cols-5 gap-6">
+      <div class="card p-6 md:col-span-3">
+        <h3 class="font-bold">Ausgangslage</h3>
+        <p class="mt-2 text-slate-600">2‑Zimmer‑Wohnung, 3. Stock mit Lift, viele Erinnerungsstücke, Teil‑Wertanrechnung möglich.</p>
+        <h3 class="font-bold mt-6">Vorgehen</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Gemeinsame Sichtung sensibler Dinge</li>
+          <li>Sortierung & Verpackung mit Kennzeichnung</li>
+          <li>Räumung & Entsorgung, Fotodoku</li>
+        </ul>
+      </div>
+      <div class="card p-6 md:col-span-2">
+        <h3 class="font-bold">Ergebnis</h3>
+        <ul class="mt-2 list-disc pl-5 text-slate-600">
+          <li>Besenrein innerhalb eines Tages</li>
+          <li>Belege & Protokoll übergeben</li>
+          <li>Wertanrechnung berücksichtigt</li>
+        </ul>
+        <p class="mt-4 text-sm text-slate-500">Dauer: 1 Tag · Team: 3 Personen</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE (Richtwerte) -->
+<section>
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Richtpreise</h2>
+    <p class="mt-2 text-slate-600 max-w-3xl">Jede Situation ist anders – diese Werte geben Orientierung. Der Fixpreis folgt nach der Besichtigung und kann sich durch Wertanrechnung reduzieren.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 390</div>
+        <div class="font-bold mt-2">Kleine Wohnung</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>bis ~40 m²</li><li>Tragestrecke kurz</li><li>Entsorgung inkl.</li>
+        </ul>
+      </div>
+      <div class="card p-6 border-2 border-[var(--brand)]">
+        <div class="text-sm text-slate-500">ab</div>
+        <div class="text-4xl font-extrabold">€ 690</div>
+        <div class="font-bold mt-2">2‑Zimmer</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>50–60 m²</li><li>wenn Wertanrechnung möglich</li><li>Belege & Fotodoku</li>
+        </ul>
+      </div>
+      <div class="card p-6">
+        <div class="text-sm text-slate-500">auf Anfrage</div>
+        <div class="text-4xl font-extrabold">Haus / Nachlass</div>
+        <div class="font-bold mt-2">mit Sonderposten</div>
+        <ul class="mt-3 text-slate-600 list-disc pl-5">
+          <li>Dachboden/Keller</li><li>Sammlungen</li><li>Mehrvolumen</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-6"><a href="/#kontakt" class="underline font-semibold">Fixpreis nach Besichtigung anfordern →</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-slate-50">
+  <div class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold">Häufige Fragen</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <details class="card p-5 open">
+        <summary class="font-semibold cursor-pointer">Wie läuft die Wertanrechnung ab?</summary>
+        <p class="mt-2 text-slate-600">Wir sichten verwertbare Stücke, bewerten transparent und ziehen den Betrag vom Fixpreis ab.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Könnt ihr ohne meine Anwesenheit räumen?</summary>
+        <p class="mt-2 text-slate-600">Ja, mit Schlüsselübergabe/Protokoll und klarer Liste – inkl. Fotodoku.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Was passiert mit persönlichen Unterlagen?</summary>
+        <p class="mt-2 text-slate-600">Sensible Unterlagen werden separat behandelt oder sicher vernichtet – auf Wunsch mit Bestätigung.</p>
+      </details>
+      <details class="card p-5">
+        <summary class="font-semibold cursor-pointer">Wie schnell ist ein Termin möglich?</summary>
+        <p class="mt-2 text-slate-600">Oft innerhalb von 24–72 Stunden. Am besten kurz anrufen.</p>
+      </details>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Beratung & Termin</a>
       <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-slate-900 text-slate-200">
   <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
-    <div><div class="text-xl font-extrabold">Klardenk Räumdienst</div><p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p></div>
-    <div><div class="font-bold">Leistungen</div>
+    <div>
+      <div class="text-xl font-extrabold">Klardenk Räumdienst</div>
+      <p class="text-slate-400 mt-2">Schnell. Fair. Diskret. – Wien</p>
+    </div>
+    <div>
+      <div class="font-bold">Leistungen</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
         <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li>
@@ -89,14 +311,16 @@
         <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
       </ul>
     </div>
-    <div><div class="font-bold">Kontakt</div>
+    <div>
+      <div class="font-bold">Kontakt</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
         <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
         <li>Wien</li>
       </ul>
     </div>
-    <div><div class="font-bold">Rechtliches</div>
+    <div>
+      <div class="font-bold">Rechtliches</div>
       <ul class="mt-3 space-y-2 text-slate-400">
         <li><a class="underline" href="/impressum.html">Impressum</a></li>
         <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
@@ -105,8 +329,11 @@
   </div>
   <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">© <span id="y"></span> Klardenk Räumdienst</div>
 </footer>
+
 <script>
-document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));
-document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileMenu')?.classList.toggle('hidden'));
+  document.getElementById('y').textContent=new Date().getFullYear();
 </script>
-</body></html>
+</body>
+</html>
+
