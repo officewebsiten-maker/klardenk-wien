@@ -1,57 +1,98 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Datenschutzerklärung – Klardenk Räumdienst</title></head>
-<body>
-  <h1>Datenschutzerklärung</h1>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Datenschutzerklärung – Klardenk Räumdienst</title>
+  <link rel="icon" href="/favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--brand:#3c5380}
+    .brand{color:var(--brand)}
+    .brand-bg{background:var(--brand)}
+    .container{max-width:1120px}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
 
-  <h2>1. Verantwortliche Stelle</h2>
-  <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
-  Klardenk Räumdienst (Inhaber: Herr [Vorname Nachname])<br>
-  Adresse: Musterstraße 1, 1010 Wien<br>
-  E‑Mail: klardenk@tuta.io<br>
-  Telefon: +43 660 1234567</p>
+  <!-- Headerbar klein -->
+  <div class="brand-bg text-white">
+    <div class="container mx-auto px-4 py-6">
+      <a href="/" class="text-white/90 hover:text-white text-sm tracking-wide">← Zur Startseite</a>
+      <h1 class="mt-2 text-3xl md:text-4xl font-extrabold">Datenschutzerklärung</h1>
+      <p class="mt-1 text-white/80">Übersichtlich. Transparent. DSGVO‑basiert.</p>
+    </div>
+  </div>
 
-  <h2>2. Allgemeine Hinweise</h2>
-  <p>Wir verarbeiten personenbezogene Daten unserer Nutzer/innen gemäß der EU‑Datenschutz‑Grundverordnung (DSGVO) und dem österreichischen Datenschutzrecht. Zweck und Rechtsgrundlage der Verarbeitung richten sich nach den unten beschriebenen Zwecken (z. B. Kontaktaufnahme, Vertragsabwicklung, Bereitstellung der Website).</p>
-  <p>Weitere Informationen zu Ihren Rechten (z. B. Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit) und zur Beschwerde bei der Datenschutzbehörde finden Sie am Ende dieser Erklärung. :contentReference[oaicite:2]{index=2}</p>
+  <main class="container mx-auto px-4 py-10 space-y-10">
 
-  <h2>3. Erhobene Daten und Zwecke</h2>
-  <ul>
-    <li><strong>Kontaktformulare:</strong> Bei Nutzung des Kontakt‑/Anfrageformulars verarbeiten wir die eingegebenen Daten (Name, Telefon, E‑Mail, Nachricht, evtl. beigefügte Dateien). Rechtsgrundlage: Einwilligung bzw. Erfüllung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. a bzw. b DSGVO).</li>
-    <li><strong>Server‑Logfiles:</strong> Beim Besuch der Website werden automatisch Informationen über den Zugriff (z. B. IP‑Adresse, Datum/Zeit, verwendeter Browser) protokolliert. Rechtsgrundlage: berechtigtes Interesse (Sicherheits‑ und Betriebszwecke). </li>
-    <li><strong>Cookies & Tracking:</strong> Wenn Sie Tracking‑Technologien (z. B. Google Analytics) zustimmen, werden Nutzungsdaten zur Verbesserung des Angebots verarbeitet. Rechtsgrundlage: Einwilligung, sofern erforderlich.</li>
-    <li><strong>Netlify Forms:</strong> Formulareinsendungen werden über Netlify Forms (USA/Netlify Inc.) verarbeitet — die dabei erhobenen Daten (Formularfelder) werden in Netlify gespeichert und Ihnen im Netlify‑Dashboard angezeigt. Bitte beachten Sie die Netlify‑Datenschutzhinweise; ggf. Vereinbarung zu Datenübertragungen prüfen.</li>
-  </ul>
-  <p>Zu Netlify als Formular‑Backend: Netlify verarbeitet submissions und speichert sie im Dashboard; das ist beim technischen Betrieb des Formulars zu benennen. (Sie können außerdem Export / Webhooks nutzen – dokumentieren Sie das in Ihrer Erklärung.) :contentReference[oaicite:3]{index=3}</p>
+    <!-- Verantwortlicher -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">1) Verantwortlicher</h2>
+      <p class="mt-3 text-slate-700">
+        Klardenk Räumdienst [e.U. / GmbH]<br>
+        [Straße Hausnummer], [PLZ] Wien, Österreich<br>
+        E‑Mail: <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a> – Tel: <a class="underline" href="tel:+43[Nummer]">+43 [Nummer]</a>
+      </p>
+    </section>
 
-  <h2>4. Weitergabe von Daten an Dritte</h2>
-  <p>Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, sofern dies für die Vertragsabwicklung erforderlich ist, wir gesetzlich dazu verpflichtet sind oder Sie ausdrücklich eingewilligt haben (z. B. Versanddienstleister, Zahlungsanbieter).</p>
+    <!-- Zwecke & Rechtsgrundlagen -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">2) Zwecke & Rechtsgrundlagen</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6 text-slate-700">
+        <div class="rounded-xl border p-5">
+          <p class="font-semibold">Kontakt & Angebote</p>
+          <p class="mt-2">Bearbeitung von Anfragen, Terminabstimmung, Angebotserstellung.</p>
+          <p class="mt-2 text-sm text-slate-500">Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (vorvertraglich), lit. a (Einwilligung, z. B. beim Formular).</p>
+        </div>
+        <div class="rounded-xl border p-5">
+          <p class="font-semibold">Website‑Betrieb</p>
+          <p class="mt-2">Sicherheits‑/Zugriffsprotokolle (Server‑Logs), Auslieferung der Inhalte.</p>
+          <p class="mt-2 text-sm text-slate-500">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>5. Speicherdauer</h2>
-  <p>Wir löschen personenbezogene Daten, sobald der Zweck der Verarbeitung entfällt und keine gesetzlichen Aufbewahrungspflichten (z. B. steuerrechtlich) entgegenstehen. Formulardaten werden i. d. R. so lange aufbewahrt, wie es für die Bearbeitung und Nachweiszwecke erforderlich ist; konkrete Fristen geben wir im Einzelfall an.</p>
+    <!-- Formulare / Netlify Forms -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">3) Formulare (Netlify Forms)</h2>
+      <p class="mt-3 text-slate-700">
+        Bei Nutzung unserer Formulare (z. B. „Schnellanfrage“, „Besichtigung“) verarbeiten wir die von Ihnen eingegebenen Daten
+        (Name, Telefon, E‑Mail, Freitext/Fotos). Die Übermittlung erfolgt über den Dienst „Netlify Forms“
+        der Netlify Inc. (USA). Die Daten werden in unserem Netlify‑Dashboard gespeichert und ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+      </p>
+      <ul class="mt-4 list-disc pl-5 text-slate-700 space-y-2">
+        <li><span class="font-semibold">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. lit. b (vorvertragliche Maßnahmen).</li>
+        <li><span class="font-semibold">Speicherdauer:</span> bis Abschluss der Anfrageabwicklung; darüber hinaus gemäß gesetzlicher Aufbewahrungspflichten (z. B. steuerrechtlich).</li>
+        <li><span class="font-semibold">Drittlandübermittlung:</span> Bei Verarbeitung durch Netlify kann eine Übermittlung in Drittländer erfolgen. Wir achten auf geeignete Garantien nach Art. 46 DSGVO (z. B. Standardvertragsklauseln) laut Anbieterangaben.</li>
+      </ul>
+      <p class="mt-4 text-sm text-slate-500">
+        Hinweis: Wenn Sie keine Online‑Übermittlung wünschen, können Sie uns jederzeit telefonisch oder per E‑Mail kontaktieren.
+      </p>
+    </section>
 
-  <h2>6. Ihre Rechte</h2>
-  <ul>
-    <li>Recht auf Auskunft über verarbeitete personenbezogene Daten</li>
-    <li>Recht auf Berichtigung oder Löschung</li>
-    <li>Recht auf Einschränkung der Verarbeitung</li>
-    <li>Recht auf Widerspruch gegen Verarbeitung aus berechtigtem Interesse</li>
-    <li>Recht auf Datenübertragbarkeit</li>
-    <li>Beschwerderecht bei der Datenschutzbehörde (Österreichische Datenschutzbehörde / DSB)</li>
-  </ul>
-  <p>Formulare der DSB zu Betroffenenrechten und Musterformulare finden Sie auf der Website der DSB. :contentReference[oaicite:4]{index=4}</p>
+    <!-- Cookies/Tracking (modular) -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">4) Cookies & optionale Tools</h2>
+      <p class="mt-3 text-slate-700">
+        Technisch notwendige Cookies setzen wir ohne Einwilligung. Alle optionalen Tools (z. B. Analytics) werden
+        nur nach Ihrer Zustimmung im Cookie‑Banner geladen. Ihre Wahl können Sie jederzeit im Banner anpassen.
+      </p>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="rounded-xl border p-5 text-slate-700">
+          <p class="font-semibold">Notwendige Cookies</p>
+          <p class="mt-2 text-sm text-slate-600">Sicherheits‑/Funktionscookies, Session‑IDs. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
+        </div>
+        <div class="rounded-xl border p-5 text-slate-700">
+          <p class="font-semibold">Analyse/Marketing (optional)</p>
+          <p class="mt-2 text-sm text-slate-600">Wird nur geladen, wenn Sie zustimmen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>7. Cookies</h2>
-  <p>Unsere Website verwendet Cookies. Notwendige Cookies (technisch erforderlich) werden ohne Einwilligung gesetzt; Tracking‑Cookies benötigen Ihre Einwilligung. Sie können Cookie‑Einstellungen jederzeit über den Cookie‑Banner anpassen oder in Ihrem Browser konfigurieren.</p>
-
-  <h2>8. Änderungen dieser Datenschutzerklärung</h2>
-  <p>Wir behalten uns vor, diese Datenschutzerklärung bei Änderungen der Verarbeitungstätigkeiten oder gesetzlicher Vorgaben anzupassen. Die jeweils aktuelle Version finden Sie auf dieser Seite (Stand: [Datum]).</p>
-
-  <h2>9. Kontakt / Datenschutz‑Anfragen</h2>
-  <p>Bei Fragen zur Verarbeitung Ihrer personenbezogenen Daten können Sie sich an folgende Adresse wenden:<br>
-  Klardenk Räumdienst, Musterstraße 1, 1010 Wien — E‑Mail: klardenk@tuta.io</p>
-
-  <hr/>
-  <p>Stand: [Datum]</p>
-</body>
-</html>
+    <!-- Empfänger & Auftragsverarbeiter -->
+    <section class="bg-white rounded-2xl shadow-sm border p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold">5) Empfänger & Auftragsverarbeiter</h2>
+      <p class="mt-3 text-slate-700">
+        Wir übermitteln personenbezogene Daten nur, wenn dies erforderlich ist (z. B. für die Vertragsabwicklung),
+        eine rechtliche Verpflichtung besteht oder Sie eingewilligt haben
