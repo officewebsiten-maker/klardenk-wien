@@ -18,6 +18,8 @@
     .shadow-soft{ box-shadow: 0 10px 25px rgba(0,0,0,.08);}
     .container{ max-width: 1120px; }
     html{ scroll-behavior:smooth; }
+    /* neu: damit Anker nicht unter dem sticky Header verschwinden */
+    #leistungen, #ablauf, #preise, #bewertungen, #kontakt { scroll-margin-top: 88px; }
   </style>
 </head>
 <body class="antialiased text-slate-800">
@@ -33,30 +35,14 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- HEADER (neu, ohne Dropdown) -->
   <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
 
       <!-- Desktop-Menü -->
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <div class="relative group">
-          <button class="inline-flex items-center gap-2 hover:underline">
-            Leistungen
-            <svg width="14" height="14" viewBox="0 0 20 20" class="opacity-70"><path d="M5 7l5 5 5-5" fill="currentColor"/></svg>
-          </button>
-          <!-- Dropdown: nur Links -->
-          <div class="absolute left-0 mt-2 w-[320px] bg-white border rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition">
-            <ul class="p-2 text-sm">
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li>
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
-              <li><a class="block px-3 py-2 rounded hover:bg-slate-50" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
-            </ul>
-          </div>
-        </div>
+        <a href="#leistungen" class="hover:underline">Leistungen</a>
         <a href="#ablauf" class="hover:underline">Ablauf</a>
         <a href="#preise" class="hover:underline">Preise</a>
         <a href="#bewertungen" class="hover:underline">Bewertungen</a>
@@ -67,20 +53,10 @@
       <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
     </div>
 
-    <!-- Mobile Menü -->
+    <!-- Mobile Menü (vereinfacht, keine Unterpunkte) -->
     <div id="mobileMenu" class="md:hidden hidden border-t">
       <nav class="px-4 py-3 text-sm space-y-2">
-        <details>
-          <summary class="py-2 font-semibold">Leistungen</summary>
-          <ul class="pl-3 space-y-1">
-            <li><a class="block py-1 underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
-            <li><a class="block py-1 underline" href="/leistungen/keller-dachboden-garage.html">Keller, Dachboden, Garage</a></li>
-            <li><a class="block py-1 underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
-            <li><a class="block py-1 underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass & Verlassenschaft</a></li>
-            <li><a class="block py-1 underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
-            <li><a class="block py-1 underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
-          </ul>
-        </details>
+        <a class="block py-1 underline" href="#leistungen">Leistungen</a>
         <a class="block py-1 underline" href="#ablauf">Ablauf</a>
         <a class="block py-1 underline" href="#preise">Preise</a>
         <a class="block py-1 underline" href="#bewertungen">Bewertungen</a>
@@ -190,7 +166,7 @@
   <section id="preise" class="bg-slate-50 py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-extrabold text-center">Transparente Preise</h2>
-      <p class="text-center text-slate-600 mt-2">Jeder Auftrag ist anders – hier Richtwerte.</p>
+    <p class="text-center text-slate-600 mt-2">Jeder Auftrag ist anders – hier Richtwerte.</p>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
         <div class="bg-white rounded-2xl p-6 shadow-soft">
           <div class="text-sm text-slate-500">ab</div>
