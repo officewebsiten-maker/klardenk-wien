@@ -1,26 +1,106 @@
-<!DOCTYPE html><html lang="de"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Reinigung & Kleinreparaturen | Klardenk Wien</title>
-<meta name="description" content="Besenrein plus: Endreinigung, Malerarbeiten, Dübel schließen – alles aus einer Hand."/>
-<link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
-<style>:root{--brand:#3c5380}.brand-bg{background:var(--brand)}</style>
-</head><body class="antialiased text-slate-800">
-<header class="bg-white sticky top-0 z-40 border-b">... (Header wie oben) ...</header>
+<!DOCTYPE html><html lang="de">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Reinigung & Kleinreparaturen | Klardenk Wien</title>
+  <meta name="description" content="Besenrein plus: Endreinigung, Malerarbeiten, Dübel schließen – alles aus einer Hand."/>
+  <link rel="icon" href="/favicon.ico"/><script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--brand:#3c5380}
+    .brand-bg{background:var(--brand)}
+    .container{max-width:1120px}
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body class="antialiased text-slate-800">
 
-<section class="bg-slate-50"><div class="container mx-auto px-4 py-12">
-  <h1 class="text-3xl md:text-4xl font-extrabold">Reinigung & Kleinreparaturen</h1>
-  <p class="mt-3 text-slate-600 max-w-3xl">Wir übergeben besenrein – auf Wunsch inkl. Endreinigung, Ausbesserungen und Malerarbeiten.</p>
-  <div class="mt-8 grid md:grid-cols-3 gap-6">
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Reinigung</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Grundreinigung</li><li>Fenster & Böden</li><li>Geruchsneutralisation</li></ul></div>
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Kleinreparaturen</h3><ul class="mt-2 list-disc pl-5 text-slate-600"><li>Dübel schließen</li><li>Ausbesserungen</li><li>Kleinere Malerarbeiten</li></ul></div>
-    <div class="border rounded-2xl p-6"><h3 class="font-bold">Für wen?</h3><p class="mt-2 text-slate-600">Vermieter, Auszug, Übergabe an Hausverwaltung.</p></div>
-  </div>
-  <div class="mt-8 flex flex-wrap gap-3">
-    <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Angebot anfordern</a>
-    <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail</a>
-  </div>
-</div></section>
+  <!-- HEADER (Unterseiten-Version) -->
+  <!-- siehe Abschnitt B -->
+  <header class="bg-white sticky top-0 z-40 border-b">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#leistungen" class="hover:underline">Leistungen</a>
+        <a href="/#ablauf" class="hover:underline">Ablauf</a>
+        <a href="/#preise" class="hover:underline">Preise</a>
+        <a href="/#bewertungen" class="hover:underline">Bewertungen</a>
+        <a href="/#kontakt" class="hover:underline">Kontakt</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 border rounded-lg" aria-label="Menü öffnen">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <nav class="px-4 py-3 text-sm space-y-2">
+        <a class="block py-1 underline" href="/#leistungen">Leistungen</a>
+        <a class="block py-1 underline" href="/#ablauf">Ablauf</a>
+        <a class="block py-1 underline" href="/#preise">Preise</a>
+        <a class="block py-1 underline" href="/#bewertungen">Bewertungen</a>
+        <a class="block py-1 underline" href="/#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
-<footer class="bg-slate-900 text-slate-200">... (wie oben) ...</footer>
-<script>/* wie oben */</script>
+  <section class="bg-slate-50">
+    <div class="container mx-auto px-4 py-12">
+      <h1 class="text-3xl md:text-4xl font-extrabold">Reinigung & Kleinreparaturen</h1>
+      <p class="mt-3 text-slate-600 max-w-3xl">Wir übergeben besenrein – auf Wunsch inkl. Endreinigung, Ausbesserungen und Malerarbeiten.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="border rounded-2xl p-6">
+          <h3 class="font-bold">Reinigung</h3>
+          <ul class="mt-2 list-disc pl-5 text-slate-600">
+            <li>Grundreinigung</li><li>Fenster & Böden</li><li>Geruchsneutralisation</li>
+          </ul>
+        </div>
+        <div class="border rounded-2xl p-6">
+          <h3 class="font-bold">Kleinreparaturen</h3>
+          <ul class="mt-2 list-disc pl-5 text-slate-600">
+            <li>Dübel schließen</li><li>Ausbesserungen</li><li>Kleinere Malerarbeiten</li>
+          </ul>
+        </div>
+        <div class="border rounded-2xl p-6">
+          <h3 class="font-bold">Für wen?</h3>
+          <p class="mt-2 text-slate-600">Vermieter, Auszug, Übergabe an Hausverwaltung.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/#kontakt" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Angebot anfordern</a>
+        <a href="mailto:klardenk@tuta.io" class="px-5 py-3 rounded-lg border">E‑Mail</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (wie Startseite) -->
+  <!-- kopiert aus index.html -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="container mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+      <div><div class="text-xl font-extrabold">Klardenk Räumdienst</div>
+        <p class="mt-2 text-slate-400">Schnell. Fair. Diskret. – Wien</p></div>
+      <div><div class="font-bold">Leistungen</div>
+        <ul class="mt-3 space-y-2 text-slate-400">
+          <li>Wohnungsauflösung</li><li>Hausräumung</li><li>Keller/Dachboden</li>
+          <li>Büro & Gewerbe</li><li>Nachlass/Verlassenschaft</li>
+        </ul></div>
+      <div><div class="font-bold">Kontakt</div>
+        <ul class="mt-3 space-y-2 text-slate-400">
+          <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
+          <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
+          <li>Wien</li>
+        </ul></div>
+      <div><div class="font-bold">Rechtliches</div>
+        <ul class="mt-3 space-y-2 text-slate-400">
+          <li><a class="underline" href="/impressum.html">Impressum</a></li>
+          <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
+        </ul></div>
+    </div>
+    <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">
+      © <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    });
+  </script>
 </body></html>
