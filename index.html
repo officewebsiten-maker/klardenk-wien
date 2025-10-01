@@ -17,13 +17,9 @@
     .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
     /* Anker-Offset für Sticky-Header */
     section[id]{scroll-margin-top:96px}
-
-    /* Fixes gegen horizontalen Overflow */
-    * { min-width: 0; }
-    html, body { overflow-x: hidden; }
   </style>
 </head>
-<body class="antialiased text-slate-800 overflow-x-hidden">
+<body class="antialiased text-slate-800">
 
   <!-- HEADER (Startseite: Scroll-Navigation) -->
   <header class="bg-white sticky top-0 z-40 border-b">
@@ -251,42 +247,45 @@
     </div>
   </section>
 
-  <!-- FOOTER (Full-Width, ohne weiße Ränder) -->
-  <footer class="bg-slate-900 text-slate-200 w-full">
-    <div class="max-w-[1120px] mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 [word-break:break-word]">
-      <div>
-        <div class="text-xl font-extrabold">Klardenk Räumdienst</div>
-        <p class="mt-2 text-slate-400">Schnell. Fair. Diskret. – Wien</p>
+  <!-- FOOTER (nur dieser Teil geändert) -->
+  <footer>
+    <!-- Full-bleed Wrapper, ignoriert Seitenscroll und füllt immer den Viewport -->
+    <div class="w-screen relative left-1/2 -translate-x-1/2 bg-slate-900 text-slate-200">
+      <div class="max-w-[1120px] mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 [word-break:break-word]">
+        <div>
+          <div class="text-xl font-extrabold">Klardenk Räumdienst</div>
+          <p class="mt-2 text-slate-400">Schnell. Fair. Diskret. – Wien</p>
+        </div>
+        <div>
+          <div class="font-bold">Leistungen</div>
+          <ul class="mt-3 space-y-2 text-slate-400">
+            <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
+            <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li>
+            <li><a class="underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
+            <li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass/Verlassenschaft</a></li>
+            <li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
+            <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold">Kontakt</div>
+          <ul class="mt-3 space-y-2 text-slate-400">
+            <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
+            <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
+            <li>Wien</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold">Rechtliches</div>
+          <ul class="mt-3 space-y-2 text-slate-400">
+            <li><a class="underline" href="/impressum.html">Impressum</a></li>
+            <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <div class="font-bold">Leistungen</div>
-        <ul class="mt-3 space-y-2 text-slate-400">
-          <li><a class="underline" href="/leistungen/wohnung-haus.html">Wohnung & Haus</a></li>
-          <li><a class="underline" href="/leistungen/keller-dachboden-garage.html">Keller/Dachboden/Garage</a></li>
-          <li><a class="underline" href="/leistungen/buero-gewerbe.html">Büro & Gewerbe</a></li>
-          <li><a class="underline" href="/leistungen/nachlass-verlassenschaft.html">Nachlass/Verlassenschaft</a></li>
-          <li><a class="underline" href="/leistungen/sperrmuell-entsorgung.html">Sperrmüll & Entsorgung</a></li>
-          <li><a class="underline" href="/leistungen/reinigung-kleinreparaturen.html">Reinigung & Kleinreparaturen</a></li>
-        </ul>
+      <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">
+        © <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.
       </div>
-      <div>
-        <div class="font-bold">Kontakt</div>
-        <ul class="mt-3 space-y-2 text-slate-400">
-          <li><a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
-          <li><a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
-          <li>Wien</li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-bold">Rechtliches</div>
-        <ul class="mt-3 space-y-2 text-slate-400">
-          <li><a class="underline" href="/impressum.html">Impressum</a></li>
-          <li><a class="underline" href="/datenschutz.html">Datenschutz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-slate-800 text-center text-slate-500 text-sm py-4">
-      © <span id="year"></span> Klardenk Räumdienst – Alle Rechte vorbehalten.
     </div>
   </footer>
 
