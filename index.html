@@ -17,11 +17,24 @@
     .card{background:#fff;border:1px solid rgb(226 232 240);border-radius:1rem}
     /* Anker-Offset für Sticky-Header */
     section[id]{scroll-margin-top:96px}
+    .glass{background:rgba(255,255,255,.8);backdrop-filter:blur(6px)}
+    .floating-cta{position:fixed;bottom:20px;right:20px;z-index:50}
   </style>
 </head>
 <body class="antialiased text-slate-800">
 
-  <!-- HEADER (Startseite: Scroll-Navigation) -->
+  <!-- Top Bar (aus index old) -->
+  <div class="w-full brand-bg text-white text-sm">
+    <div class="container mx-auto px-4 py-2 flex flex-col md:flex-row gap-2 md:gap-6 items-center justify-between">
+      <div>Entrümpelung Wien & Umgebung – kurzfristige Termine möglich</div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+436601234567" class="underline underline-offset-4">+43 660 1234567</a>
+        <a href="#kontakt" class="hidden md:inline-block bg-white text-slate-900 px-3 py-1 rounded-full">Kostenlose Besichtigung</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER (wie in deinem „diesem“ Snippet) -->
   <header class="bg-white sticky top-0 z-40 border-b">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="font-extrabold text-lg">Klardenk Räumdienst</a>
@@ -45,209 +58,216 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="brand-bg text-white">
-    <div class="container mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="uppercase tracking-widest text-white/80 text-xs">Räumung · Wien & Umgebung</p>
-        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">Schnell. Fair. Diskret. – <span class="opacity-90">besenrein zum Fixpreis</span></h1>
-        <p class="mt-4 text-lg text-white/90">Wohnung, Haus, Keller, Büro. Abbau, Transport & recyclinggerechte Entsorgung – versichert und mit Entsorgungsbelegen.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Kostenlose Besichtigung</a>
-          <a href="tel:+436601234567" class="border border-white/40 text-white px-5 py-3 rounded-xl">+43 660 1234567</a>
+  <!-- HERO (aus index old, mit Bild + Formular) -->
+  <header class="relative bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center">
+    <div class="bg-black/40">
+      <div class="container mx-auto px-4 py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
+        <div class="text-white">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Entrümpelung, Räumung &<br/> Wohnungsauflösung</h1>
+          <p class="mt-4 text-lg md:text-xl max-w-xl">Schnell, fair & diskret in Wien und Umgebung. Fixpreis nach Besichtigung, besenrein, versichert. Kostenlose Anfahrt & Angebot.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#kontakt" class="bg-white text-slate-900 font-semibold px-5 py-3 rounded-xl shadow-soft">Jetzt kostenlos anfragen</a>
+            <a href="https://wa.me/436601234567" class="glass border border-white/30 text-white px-5 py-3 rounded-xl">WhatsApp schreiben</a>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-4 text-sm opacity-90">
+            <span class="inline-flex items-center gap-2">✅ Besenrein-Garantie</span>
+            <span class="inline-flex items-center gap-2">✅ Wertanrechnung möglich</span>
+            <span class="inline-flex items-center gap-2">✅ Kurzfristige Termine</span>
+          </div>
         </div>
-        <div class="mt-6 flex flex-wrap gap-4 text-sm text-white/90">
-          <span>✅ Kurzfristige Termine (24–72h)</span>
-          <span>✅ Wertanrechnung möglich</span>
-          <span>✅ Belege & Fotodoku</span>
-        </div>
-      </div>
-      <div class="card p-6 md:p-8 text-slate-700 shadow-soft bg-white">
-        <h3 class="text-xl font-bold">Warum Klardenk?</h3>
-        <ul class="mt-3 grid grid-cols-1 gap-2 list-disc pl-5">
-          <li>Transparenter Fixpreis nach Besichtigung</li>
-          <li>Schonender Abbau & Tragen mit Schutzmaterial</li>
-          <li>Recycling-gerechte Entsorgung in Wien</li>
-          <li>Besenreine Übergabe mit Protokoll</li>
-        </ul>
+        <!-- Netlify Form -->
+        <form id="hero-form" name="Besichtigung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white/95 rounded-2xl p-6 shadow-soft">
+          <input type="hidden" name="form-name" value="Besichtigung" />
+          <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
+          <h2 class="text-xl font-bold">Kostenlose Besichtigung anfragen</h2>
+          <p class="text-sm text-slate-600">Wir melden uns innerhalb von 2 Stunden (werktags).</p>
+          <div class="mt-4 grid grid-cols-1 gap-3">
+            <input class="border rounded-lg px-4 py-3" name="name" placeholder="Ihr Name" required />
+            <input class="border rounded-lg px-4 py-3" name="telefon" type="tel" placeholder="Telefon" required />
+            <input class="border rounded-lg px-4 py-3" name="email" type="email" placeholder="E-Mail (optional)" />
+            <input class="border rounded-lg px-4 py-3" name="adresse" placeholder="Adresse / Bezirk" />
+            <select class="border rounded-lg px-4 py-3" name="art">
+              <option>Art der Räumung auswählen</option>
+              <option>Wohnung / Haus</option>
+              <option>Keller / Dachboden</option>
+              <option>Büro / Gewerbe</option>
+              <option>Nachlass / Verlassenschaft</option>
+              <option>Garage / Lager</option>
+            </select>
+            <textarea class="border rounded-lg px-4 py-3" name="beschreibung" rows="3" placeholder="Kurz beschreiben (m², Stockwerk, Lift, Fotos)"></textarea>
+            <button class="brand-bg text-white font-semibold rounded-lg px-5 py-3">Anfrage senden</button>
+            <p class="text-xs text-slate-500">Mit Klick stimmen Sie der Verarbeitung gemäß <a href="#datenschutz" class="underline">Datenschutz</a> zu.</p>
+          </div>
+        </form>
       </div>
     </div>
+  </header>
+
+  <!-- Trust Badges (aus index old) -->
+  <section class="container mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="text-center border rounded-xl p-4">⭐️⭐️⭐️⭐️⭐️ <div class="text-sm text-slate-600">Kundenzufriedenheit</div></div>
+    <div class="text-center border rounded-xl p-4">⏱️ <div class="text-sm text-slate-600">Termin in 24–48h</div></div>
+    <div class="text-center border rounded-xl p-4">🧹 <div class="text-sm text-slate-600">Besenrein-Garantie</div></div>
+    <div class="text-center border rounded-xl p-4">🛡️ <div class="text-sm text-slate-600">Betriebshaftpflicht</div></div>
   </section>
 
   <!-- LEISTUNGEN -->
-  <section id="leistungen" class="bg-white">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center">Unsere Leistungen</h2>
-      <p class="mt-2 text-slate-600 text-center">Alles aus einer Hand – transparent & ordentlich.</p>
-
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <a href="/leistungen/wohnung-haus.html" class="card p-6 block hover:shadow-soft transition">
+  <section id="leistungen" class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">Unsere Leistungen</h2>
+      <p class="text-center text-slate-600 mt-2">Alles aus einer Hand – transparent & ordentlich.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Wohnung & Haus</h3>
-          <p class="mt-2 text-slate-600">Komplette Räumung inkl. Abbau, Transport & Entsorgung.</p>
-        </a>
-        <a href="/leistungen/keller-dachboden-garage.html" class="card p-6 block hover:shadow-soft transition">
+          <p class="mt-2 text-slate-600">Komplette Räumung inkl. Abbau, Sortierung, Transport und Entsorgung nach Ö-Standards.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Keller, Dachboden, Garage</h3>
           <p class="mt-2 text-slate-600">Schnell & unkompliziert – wir tragen, Sie lehnen sich zurück.</p>
-        </a>
-        <a href="/leistungen/buero-gewerbe.html" class="card p-6 block hover:shadow-soft transition">
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Büro & Gewerbe</h3>
-          <p class="mt-2 text-slate-600">Räumung außerhalb Ihrer Geschäftszeiten, inkl. Aktenvernichtung.</p>
-        </a>
-        <a href="/leistungen/nachlass-verlassenschaft.html" class="card p-6 block hover:shadow-soft transition">
+          <p class="mt-2 text-slate-600">Räumung außerhalb Ihrer Geschäftszeiten, inkl. Aktenvernichtung auf Wunsch.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Nachlass & Verlassenschaft</h3>
           <p class="mt-2 text-slate-600">Einfühlsame Abwicklung mit Wertanrechnung verwertbarer Gegenstände.</p>
-        </a>
-        <a href="/leistungen/sperrmuell-entsorgung.html" class="card p-6 block hover:shadow-soft transition">
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Sperrmüll & Entsorgung</h3>
           <p class="mt-2 text-slate-600">Fachgerechte Trennung, Recycling & Dokumentation der Entsorgungswege.</p>
-        </a>
-        <a href="/leistungen/reinigung-kleinreparaturen.html" class="card p-6 block hover:shadow-soft transition">
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-soft">
           <h3 class="font-bold text-lg">Reinigung & Kleinreparaturen</h3>
-          <p class="mt-2 text-slate-600">Besenrein plus: Endreinigung, Malerarbeiten, Dübel schließen.</p>
-        </a>
+          <p class="mt-2 text-slate-600">Besenrein plus: optional Endreinigung, Malerarbeiten, Dübel schließen.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ABLAUF -->
-  <section id="ablauf" class="bg-slate-50">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center">So läuft’s ab</h2>
-      <div class="mt-8 grid md:grid-cols-4 gap-6">
-        <div class="card p-6">
-          <div class="text-sm text-slate-500">Schritt 1</div>
-          <div class="font-bold mt-1">Erstgespräch</div>
-          <p class="mt-2 text-slate-600">Kurzbriefing per Telefon/WhatsApp. Fotos helfen bei der Einschätzung.</p>
-        </div>
-        <div class="card p-6">
-          <div class="text-sm text-slate-500">Schritt 2</div>
-          <div class="font-bold mt-1">Besichtigung & Fixpreis</div>
-          <p class="mt-2 text-slate-600">Kostenlos & transparent. Wertanrechnung wird mitbesprochen.</p>
-        </div>
-        <div class="card p-6">
-          <div class="text-sm text-slate-500">Schritt 3</div>
-          <div class="font-bold mt-1">Räumung</div>
-          <p class="mt-2 text-slate-600">Abbau, Sortierung, Transport & Entsorgung – sauber und vorsichtig.</p>
-        </div>
-        <div class="card p-6">
-          <div class="text-sm text-slate-500">Schritt 4</div>
-          <div class="font-bold mt-1">Besenrein & Belege</div>
-          <p class="mt-2 text-slate-600">Abnahme mit dir. Auf Wunsch Fotodoku & Entsorgungsbelege.</p>
-        </div>
+  <section id="ablauf" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">So läuft's ab</h2>
+      <div class="mt-10 grid md:grid-cols-4 gap-6">
+        <div class="p-6 border rounded-2xl"><div class="text-sm text-slate-500">Schritt 1</div><div class="font-bold mt-1">Kontakt & Fotos</div><p class="mt-2 text-slate-600">Kurz beschreiben, optional Bilder senden. Wir schätzen Umfang & Aufwand.</p></div>
+        <div class="p-6 border rounded-2xl"><div class="text-sm text-slate-500">Schritt 2</div><div class="font-bold mt-1">Besichtigung</div><p class="mt-2 text-slate-600">Vor Ort (kostenlos). Danach Fixpreis-Angebot ohne versteckte Kosten.</p></div>
+        <div class="p-6 border rounded-2xl"><div class="text-sm text-slate-500">Schritt 3</div><div class="font-bold mt-1">Räumung</div><p class="mt-2 text-slate-600">Pünktlich, schnell & diskret. Fachgerechte Entsorgung & Recycling.</p></div>
+        <div class="p-6 border rounded-2xl"><div class="text-sm text-slate-500">Schritt 4</div><div class="font-bold mt-1">Besenrein</div><p class="mt-2 text-slate-600">Gemeinsame Abnahme, Rechnung & auf Wunsch Bestätigung für Hausverwaltung.</p></div>
       </div>
     </div>
   </section>
 
   <!-- PREISE -->
-  <section id="preise" class="bg-white">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center">Richtpreise</h2>
-      <p class="mt-2 text-slate-600 text-center max-w-3xl mx-auto">Jede Räumung ist anders – diese Werte geben Orientierung. Der Fixpreis folgt nach Besichtigung und kann sich durch Wertanrechnung reduzieren.</p>
-
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="card p-6">
+  <section id="preise" class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">Transparente Preise</h2>
+      <p class="text-center text-slate-600 mt-2">Jeder Auftrag ist anders – hier Richtwerte.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
           <div class="text-sm text-slate-500">ab</div>
-          <div class="text-4xl font-extrabold">€ 390</div>
-          <div class="font-bold mt-2">Kleinwohnung</div>
+          <div class="text-4xl font-extrabold">€ 199</div>
+          <div class="font-bold mt-2">Keller / Abteil</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>bis ~40 m²</li><li>kurze Wege</li><li>Entsorgung inkl.</li>
+            <li>1–2 m³</li>
+            <li>inkl. Anfahrt & Entsorgung</li>
+            <li>fertig in 1–2 Std.</li>
           </ul>
         </div>
-        <div class="card p-6 border-2 border-[var(--brand)]">
+        <div class="bg-white rounded-2xl p-6 shadow-soft border-2 border-[var(--brand)]">
           <div class="text-sm text-slate-500">ab</div>
           <div class="text-4xl font-extrabold">€ 690</div>
-          <div class="font-bold mt-2">2–3 Zimmer</div>
+          <div class="font-bold mt-2">2-Zimmer-Wohnung</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>50–80 m²</li><li>Fixpreis nach Besichtigung</li><li>Belege & Protokoll</li>
+            <li>ca. 50–60 m²</li>
+            <li>2–3 Mitarbeiter</li>
+            <li>Besenrein inklusive</li>
           </ul>
         </div>
-        <div class="card p-6">
-          <div class="text-sm text-slate-500">auf Anfrage</div>
-          <div class="text-4xl font-extrabold">Haus / Projekt</div>
-          <div class="font-bold mt-2">mit Sonderposten</div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <div class="text-sm text-slate-500">ab</div>
+          <div class="text-4xl font-extrabold">€ 1.490</div>
+          <div class="font-bold mt-2">Haus / Verlassenschaft</div>
           <ul class="mt-3 text-slate-600 list-disc pl-5">
-            <li>Dachboden/Keller</li><li>viel Volumen</li><li>Option Reinigung/Maler</li>
+            <li>Fixpreis nach Besichtigung</li>
+            <li>Wertanrechnung möglich</li>
+            <li>inkl. Entsorgungsbelege</li>
           </ul>
         </div>
       </div>
+      <p class="text-center mt-6"><a href="#kontakt" class="underline font-semibold">Kostenloses Fixpreis-Angebot anfordern →</a></p>
     </div>
   </section>
 
   <!-- BEWERTUNGEN -->
-  <section id="bewertungen" class="bg-slate-50">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center">Bewertungen</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <figure class="card p-6">
-          <figcaption class="font-semibold">M. H., Wien</figcaption>
-          <p class="mt-2 text-slate-600">„Schnell, fair und sehr ordentlich gearbeitet – die Wohnung war wirklich besenrein.“</p>
-        </figure>
-        <figure class="card p-6">
-          <figcaption class="font-semibold">A. S., Hausverwaltung</figcaption>
-          <p class="mt-2 text-slate-600">„Fixpreis eingehalten, Belege und Fotodoku – so wünsche ich mir das.“</p>
-        </figure>
-        <figure class="card p-6">
-          <figcaption class="font-semibold">K. R., Privat</figcaption>
-          <p class="mt-2 text-slate-600">„Sehr freundlich, alles transparent erklärt. Gerne wieder!“</p>
-        </figure>
+  <section id="bewertungen" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">Stimmen unserer Kund:innen</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <figure class="border rounded-2xl p-6"><blockquote class="text-slate-700">„Sehr schnelle Terminvergabe, fairer Preis und alles wirklich besenrein hinterlassen. Absolute Empfehlung!“</blockquote><figcaption class="mt-3 text-sm text-slate-500">— M. H., 1050 Wien</figcaption></figure>
+        <figure class="border rounded-2xl p-6"><blockquote class="text-slate-700">„Professionell und diskret. Besonders die Wertanrechnung hat uns positiv überrascht.“</blockquote><figcaption class="mt-3 text-sm text-slate-500">— M. M., Klosterneuburg</figcaption></figure>
+        <figure class="border rounded-2xl p-6"><blockquote class="text-slate-700">„Büro an einem Nachmittag leer, inklusive Entsorgung und Dokumentation. Top Team!“</blockquote><figcaption class="mt-3 text-sm text-slate-500">— M. M., Wien 2</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- KONTAKT (Netlify-Form) -->
-  <section id="kontakt" class="bg-white">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center">Kontakt & Angebot</h2>
-      <p class="mt-2 text-slate-600 text-center">Schicke uns kurz dein Anliegen – wir melden uns rasch.</p>
+  <!-- Einsatzgebiet Karte -->
+  <section id="einsatzgebiet" class="bg-slate-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">Einsatzgebiet</h2>
+      <p class="text-center text-slate-600 mt-2">Wien, Niederösterreich (Umland), Burgenland – auf Anfrage auch weiter.</p>
+      <div class="mt-8 rounded-2xl overflow-hidden shadow-soft">
+        <iframe title="Karte Wien" src="https://www.openstreetmap.org/export/embed.html?bbox=16.18%2C48.10%2C16.58%2C48.32&layer=mapnik" class="w-full h-[360px]"></iframe>
+      </div>
+    </div>
+  </section>
 
-      <div class="mt-8 grid md:grid-cols-2 gap-8">
-        <!-- FORM: Netlify erkennt dieses Formular -->
-        <form name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/danke.html" class="card p-6 space-y-4">
-          <!-- wichtig für Netlify (auch bei SPAs): -->
-          <input type="hidden" name="form-name" value="contact"/>
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
-          </p>
-
-          <div>
-            <label class="block text-sm font-medium">Name</label>
-            <input class="mt-1 w-full rounded-lg border px-3 py-2" type="text" name="name" required/>
-          </div>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium">E-Mail</label>
-              <input class="mt-1 w-full rounded-lg border px-3 py-2" type="email" name="email" required/>
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Telefon</label>
-              <input class="mt-1 w-full rounded-lg border px-3 py-2" type="tel" name="telefon"/>
-            </div>
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Nachricht</label>
-            <textarea class="mt-1 w-full rounded-lg border px-3 py-2" name="nachricht" rows="5" placeholder="Was soll geräumt werden? Etage, Lift, Tragestrecken, Fotos?"></textarea>
-          </div>
-          <div class="flex flex-wrap gap-3">
-            <button type="submit" class="brand-bg text-white px-5 py-3 rounded-lg font-semibold">Abschicken</button>
-            <a href="tel:+436601234567" class="px-5 py-3 rounded-lg border">Jetzt anrufen</a>
-          </div>
-        </form>
-
-        <div class="card p-6">
-          <div class="font-bold">Direktkontakt</div>
-          <ul class="mt-3 space-y-2 text-slate-600">
-            <li>Telefon: <a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
-            <li>E-Mail: <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
-            <li>Wien · Österreich</li>
-          </ul>
-          <div class="mt-6 font-bold">Tipp</div>
-          <p class="mt-2 text-slate-600">Fotos oder ein kurzes Video helfen uns, schneller ein faires Angebot zu machen.</p>
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-16">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-extrabold">Kontakt</h2>
+        <p class="mt-2 text-slate-600">Rufen Sie an, schreiben Sie per WhatsApp oder nutzen Sie das Formular. Wir melden uns rasch!</p>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li>📞 <a class="underline" href="tel:+436601234567">+43 660 1234567</a></li>
+          <li>💬 <a class="underline" href="https://wa.me/436601234567">WhatsApp Nachricht</a></li>
+          <li>✉️ <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></li>
+          <li>📍 Beispielgasse 12, 1010 Wien</li>
+        </ul>
+        <div class="mt-8">
+          <h3 class="font-bold">FAQ</h3>
+          <details class="mt-3 border rounded-xl p-4">
+            <summary class="font-semibold">Wie schnell ist ein Termin möglich?</summary>
+            <p class="mt-2 text-slate-600">Oft innerhalb von 24–48 Stunden. Für dringende Fälle rufen Sie am besten direkt an.</p>
+          </details>
+          <details class="mt-3 border rounded-xl p-4">
+            <summary class="font-semibold">Gibt es versteckte Kosten?</summary>
+            <p class="mt-2 text-slate-600">Nein. Nach der kostenlosen Besichtigung erhalten Sie einen Fixpreis, der alles enthält.</p>
+          </details>
+          <details class="mt-3 border rounded-xl p-4">
+            <summary class="font-semibold">Was passiert mit verwertbaren Gegenständen?</summary>
+            <p class="mt-2 text-slate-600">Wir rechnen verwertbare Werte an und reduzieren so Ihren Endpreis – transparent dokumentiert.</p>
+          </details>
         </div>
       </div>
+      <!-- Netlify Form -->
+      <form name="Schnellanfrage" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white rounded-2xl p-6 shadow-soft border w-full">
+        <input type="hidden" name="form-name" value="Schnellanfrage" />
+        <p class="hidden"><label>Antispam <input name="bot-field" /></label></p>
+        <h3 class="text-xl font-bold">Schnellanfrage</h3>
+        <div class="mt-4 grid grid-cols-1 gap-3">
+          <input class="border rounded-lg px-4 py-3" name="name" placeholder="Ihr Name" required />
+          <input class="border rounded-lg px-4 py-3" name="telefon" type="tel" placeholder="Telefon" required />
+          <input class="border rounded-lg px-4 py-3" name="email" type="email" placeholder="E-Mail (optional)" />
+          <textarea class="border rounded-lg px-4 py-3" name="beschreibung" rows="4" placeholder="Worum geht's? (Ort, Umfang, Fotos)"></textarea>
+          <button class="brand-bg text-white font-semibold rounded-lg px-5 py-3">Absenden</button>
+          <p class="text-xs text-slate-500">Datenschutz-Hinweis: Wir verwenden Ihre Daten ausschließlich zur Bearbeitung Ihrer Anfrage.</p>
+        </div>
+      </form>
     </div>
   </section>
 
-  <!-- FOOTER (nur dieser Teil geändert, full-bleed & robust) -->
+  <!-- FOOTER (full-bleed & robust) -->
   <footer class="relative">
     <div class="w-screen relative left-1/2 -translate-x-1/2 bg-slate-900 text-slate-200">
       <div class="max-w-[1120px] mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 [word-break:break-word]">
@@ -287,6 +307,27 @@
       </div>
     </div>
   </footer>
+
+  <!-- Rechtliches (aus index old) -->
+  <section id="impressum" class="bg-slate-50 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-extrabold">Impressum</h2>
+      <p class="mt-3 text-slate-700">Klardenk Räumdienst · Beispielgasse 12, 1010 Wien · Tel: +43 660 1234567 · E-Mail: <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a></p>
+      <p class="text-slate-600 text-sm mt-2">Firmendaten/UID werden nachgereicht.</p>
+    </div>
+  </section>
+
+  <section id="datenschutz" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-extrabold">Datenschutz</h2>
+      <p class="mt-3 text-slate-700">Wir verarbeiten personenbezogene Daten (Name, Kontakt, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO. Daten werden nicht an Dritte weitergegeben. Sie haben Recht auf Auskunft, Berichtigung, Löschung und Widerspruch. Kontakt: <a class="underline" href="mailto:klardenk@tuta.io">klardenk@tuta.io</a>.</p>
+    </div>
+  </section>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta hidden md:block">
+    <a href="#kontakt" class="brand-bg text-white rounded-full shadow-soft px-4 py-3 font-semibold">Kostenlose Besichtigung anfragen</a>
+  </div>
 
   <!-- SCRIPTS -->
   <script>
